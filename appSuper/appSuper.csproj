@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB4628F0-E6B9-4A0B-93D3-EDF8B2773120}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>appSuper</RootNamespace>
+    <AssemblyName>appSuper</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>D:\GunaPatcher-master\GunaPatcher\bin\Debug\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dienTuUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dienTuUserControl.Designer.cs">
+      <DependentUpon>dienTuUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doChoiUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="doChoiUserControl.Designer.cs">
+      <DependentUpon>doChoiUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giaDungUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="giaDungUserControl.Designer.cs">
+      <DependentUpon>giaDungUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myPhamUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="myPhamUserControl.Designer.cs">
+      <DependentUpon>myPhamUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="indexForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="indexForm.Designer.cs">
+      <DependentUpon>indexForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="indexUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="indexUserControl.Designer.cs">
+      <DependentUpon>indexUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nhaCCUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="nhaCCUserControl.Designer.cs">
+      <DependentUpon>nhaCCUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nhanVienUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="nhanVienUserControl.Designer.cs">
+      <DependentUpon>nhanVienUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sachUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sachUserControl.Designer.cs">
+      <DependentUpon>sachUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="theThaoUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="theThaoUserControl.Designer.cs">
+      <DependentUpon>theThaoUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thoiTrangUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="thoiTrangUserControl.Designer.cs">
+      <DependentUpon>thoiTrangUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registerForm.Designer.cs">
+      <DependentUpon>registerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thucPhamUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="thucPhamUserControl.Designer.cs">
+      <DependentUpon>thucPhamUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thuCungUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="thuCungUserControl.Designer.cs">
+      <DependentUpon>thuCungUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thuocUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="thuocUserControl.Designer.cs">
+      <DependentUpon>thuocUserControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="dienTuUserControl.resx">
+      <DependentUpon>dienTuUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doChoiUserControl.resx">
+      <DependentUpon>doChoiUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giaDungUserControl.resx">
+      <DependentUpon>giaDungUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="indexForm.resx">
+      <DependentUpon>indexForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="indexUserControl.resx">
+      <DependentUpon>indexUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="myPhamUserControl.resx">
+      <DependentUpon>myPhamUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nhaCCUserControl.resx">
+      <DependentUpon>nhaCCUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nhanVienUserControl.resx">
+      <DependentUpon>nhanVienUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="sachUserControl.resx">
+      <DependentUpon>sachUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="theThaoUserControl.resx">
+      <DependentUpon>theThaoUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thoiTrangUserControl.resx">
+      <DependentUpon>thoiTrangUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registerForm.resx">
+      <DependentUpon>registerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thucPhamUserControl.resx">
+      <DependentUpon>thucPhamUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thuCungUserControl.resx">
+      <DependentUpon>thuCungUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thuocUserControl.resx">
+      <DependentUpon>thuocUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
