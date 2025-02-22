@@ -73,6 +73,18 @@
     <Compile Include="giaDungUserControl.Designer.cs">
       <DependentUpon>giaDungUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="giaoDucUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="giaoDucUserControl.Designer.cs">
+      <DependentUpon>giaoDucUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="meVaBeUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="meVaBeUserControl.Designer.cs">
+      <DependentUpon>meVaBeUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="myPhamUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -108,6 +120,12 @@
     </Compile>
     <Compile Include="nhanVienUserControl.Designer.cs">
       <DependentUpon>nhanVienUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nhapKhauUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="nhapKhauUserControl.Designer.cs">
+      <DependentUpon>nhapKhauUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -162,11 +180,17 @@
     <EmbeddedResource Include="giaDungUserControl.resx">
       <DependentUpon>giaDungUserControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="giaoDucUserControl.resx">
+      <DependentUpon>giaoDucUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="indexForm.resx">
       <DependentUpon>indexForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="indexUserControl.resx">
       <DependentUpon>indexUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="meVaBeUserControl.resx">
+      <DependentUpon>meVaBeUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="myPhamUserControl.resx">
       <DependentUpon>myPhamUserControl.cs</DependentUpon>
@@ -179,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="nhanVienUserControl.resx">
       <DependentUpon>nhanVienUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nhapKhauUserControl.resx">
+      <DependentUpon>nhapKhauUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -33,10 +33,12 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.btnNhapKhau = new Guna.UI2.WinForms.Guna2Button();
+            this.btnGiaoDuc = new Guna.UI2.WinForms.Guna2Button();
+            this.btnMeVaBe = new Guna.UI2.WinForms.Guna2Button();
             this.btnNhaCC = new Guna.UI2.WinForms.Guna2Button();
             this.btnNhanVien = new Guna.UI2.WinForms.Guna2Button();
             this.btnThuoc = new Guna.UI2.WinForms.Guna2Button();
-            this.btnThoat = new Guna.UI2.WinForms.Guna2Button();
             this.btnThuCung = new Guna.UI2.WinForms.Guna2Button();
             this.btnSach = new Guna.UI2.WinForms.Guna2Button();
             this.btnTheThao = new Guna.UI2.WinForms.Guna2Button();
@@ -48,7 +50,7 @@
             this.btnThoiTrang = new Guna.UI2.WinForms.Guna2Button();
             this.btnIndex = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.imgSlide = new System.Windows.Forms.PictureBox();
+            this.btnThoat = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelContainer = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -62,7 +64,6 @@
             this.panel1.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSlide)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -88,10 +89,12 @@
             // 
             // guna2CustomGradientPanel1
             // 
+            this.guna2CustomGradientPanel1.Controls.Add(this.btnNhapKhau);
+            this.guna2CustomGradientPanel1.Controls.Add(this.btnGiaoDuc);
+            this.guna2CustomGradientPanel1.Controls.Add(this.btnMeVaBe);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnNhaCC);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnNhanVien);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnThuoc);
-            this.guna2CustomGradientPanel1.Controls.Add(this.btnThoat);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnThuCung);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnSach);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnTheThao);
@@ -103,7 +106,6 @@
             this.guna2CustomGradientPanel1.Controls.Add(this.btnThoiTrang);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnIndex);
             this.guna2CustomGradientPanel1.Controls.Add(this.pictureBox1);
-            this.guna2CustomGradientPanel1.Controls.Add(this.imgSlide);
             this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
@@ -112,6 +114,99 @@
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(128, 700);
             this.guna2CustomGradientPanel1.TabIndex = 0;
+            // 
+            // btnNhapKhau
+            // 
+            this.btnNhapKhau.Animated = true;
+            this.btnNhapKhau.BackColor = System.Drawing.Color.Transparent;
+            this.btnNhapKhau.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
+            this.btnNhapKhau.BorderRadius = 8;
+            this.btnNhapKhau.BorderThickness = 1;
+            this.btnNhapKhau.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnNhapKhau.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.btnNhapKhau.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnNhapKhau.CheckedState.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhapKhau.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(111)))));
+            this.btnNhapKhau.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btnNhapKhau.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnNhapKhau.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnNhapKhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNhapKhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnNhapKhau.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
+            this.btnNhapKhau.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhapKhau.ForeColor = System.Drawing.Color.Gray;
+            this.btnNhapKhau.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnNhapKhau.Image = ((System.Drawing.Image)(resources.GetObject("btnNhapKhau.Image")));
+            this.btnNhapKhau.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnNhapKhau.Location = new System.Drawing.Point(12, 661);
+            this.btnNhapKhau.Name = "btnNhapKhau";
+            this.btnNhapKhau.Size = new System.Drawing.Size(105, 30);
+            this.btnNhapKhau.TabIndex = 17;
+            this.btnNhapKhau.Text = "      Nhập khẩu";
+            this.btnNhapKhau.UseTransparentBackground = true;
+            this.btnNhapKhau.Click += new System.EventHandler(this.btnNhapKhau_Click);
+            // 
+            // btnGiaoDuc
+            // 
+            this.btnGiaoDuc.Animated = true;
+            this.btnGiaoDuc.BackColor = System.Drawing.Color.Transparent;
+            this.btnGiaoDuc.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
+            this.btnGiaoDuc.BorderRadius = 8;
+            this.btnGiaoDuc.BorderThickness = 1;
+            this.btnGiaoDuc.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnGiaoDuc.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.btnGiaoDuc.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnGiaoDuc.CheckedState.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGiaoDuc.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(111)))));
+            this.btnGiaoDuc.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.btnGiaoDuc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGiaoDuc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGiaoDuc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGiaoDuc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGiaoDuc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
+            this.btnGiaoDuc.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGiaoDuc.ForeColor = System.Drawing.Color.Gray;
+            this.btnGiaoDuc.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.btnGiaoDuc.Image = ((System.Drawing.Image)(resources.GetObject("btnGiaoDuc.Image")));
+            this.btnGiaoDuc.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnGiaoDuc.Location = new System.Drawing.Point(12, 621);
+            this.btnGiaoDuc.Name = "btnGiaoDuc";
+            this.btnGiaoDuc.Size = new System.Drawing.Size(105, 30);
+            this.btnGiaoDuc.TabIndex = 16;
+            this.btnGiaoDuc.Text = "  Giáo dục";
+            this.btnGiaoDuc.UseTransparentBackground = true;
+            this.btnGiaoDuc.Click += new System.EventHandler(this.btnGiaoDuc_Click);
+            // 
+            // btnMeVaBe
+            // 
+            this.btnMeVaBe.Animated = true;
+            this.btnMeVaBe.BackColor = System.Drawing.Color.Transparent;
+            this.btnMeVaBe.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
+            this.btnMeVaBe.BorderRadius = 8;
+            this.btnMeVaBe.BorderThickness = 1;
+            this.btnMeVaBe.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnMeVaBe.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.btnMeVaBe.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnMeVaBe.CheckedState.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMeVaBe.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(111)))));
+            this.btnMeVaBe.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.btnMeVaBe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMeVaBe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMeVaBe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMeVaBe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMeVaBe.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
+            this.btnMeVaBe.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMeVaBe.ForeColor = System.Drawing.Color.Gray;
+            this.btnMeVaBe.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            this.btnMeVaBe.Image = ((System.Drawing.Image)(resources.GetObject("btnMeVaBe.Image")));
+            this.btnMeVaBe.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnMeVaBe.Location = new System.Drawing.Point(12, 581);
+            this.btnMeVaBe.Name = "btnMeVaBe";
+            this.btnMeVaBe.Size = new System.Drawing.Size(105, 30);
+            this.btnMeVaBe.TabIndex = 15;
+            this.btnMeVaBe.Text = "    Mẹ và bé";
+            this.btnMeVaBe.UseTransparentBackground = true;
+            this.btnMeVaBe.Click += new System.EventHandler(this.btnMeVaBe_Click_1);
             // 
             // btnNhaCC
             // 
@@ -123,9 +218,9 @@
             this.btnNhaCC.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnNhaCC.CheckedState.BorderColor = System.Drawing.Color.White;
             this.btnNhaCC.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnNhaCC.CheckedState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhaCC.CheckedState.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhaCC.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(111)))));
-            this.btnNhaCC.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btnNhaCC.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
             this.btnNhaCC.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnNhaCC.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnNhaCC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -133,12 +228,12 @@
             this.btnNhaCC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
             this.btnNhaCC.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhaCC.ForeColor = System.Drawing.Color.Gray;
-            this.btnNhaCC.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnNhaCC.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
             this.btnNhaCC.Image = ((System.Drawing.Image)(resources.GetObject("btnNhaCC.Image")));
             this.btnNhaCC.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnNhaCC.Location = new System.Drawing.Point(12, 577);
+            this.btnNhaCC.Location = new System.Drawing.Point(12, 541);
             this.btnNhaCC.Name = "btnNhaCC";
-            this.btnNhaCC.Size = new System.Drawing.Size(105, 36);
+            this.btnNhaCC.Size = new System.Drawing.Size(105, 30);
             this.btnNhaCC.TabIndex = 14;
             this.btnNhaCC.Text = "Nhà cc";
             this.btnNhaCC.UseTransparentBackground = true;
@@ -154,9 +249,9 @@
             this.btnNhanVien.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnNhanVien.CheckedState.BorderColor = System.Drawing.Color.White;
             this.btnNhanVien.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnNhanVien.CheckedState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhanVien.CheckedState.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhanVien.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(111)))));
-            this.btnNhanVien.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.btnNhanVien.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image10")));
             this.btnNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -164,12 +259,12 @@
             this.btnNhanVien.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
             this.btnNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhanVien.ForeColor = System.Drawing.Color.Gray;
-            this.btnNhanVien.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.btnNhanVien.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image11")));
             this.btnNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("btnNhanVien.Image")));
             this.btnNhanVien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnNhanVien.Location = new System.Drawing.Point(12, 535);
+            this.btnNhanVien.Location = new System.Drawing.Point(12, 501);
             this.btnNhanVien.Name = "btnNhanVien";
-            this.btnNhanVien.Size = new System.Drawing.Size(105, 36);
+            this.btnNhanVien.Size = new System.Drawing.Size(105, 30);
             this.btnNhanVien.TabIndex = 13;
             this.btnNhanVien.Text = "     Nhân viên";
             this.btnNhanVien.UseTransparentBackground = true;
@@ -185,9 +280,9 @@
             this.btnThuoc.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnThuoc.CheckedState.BorderColor = System.Drawing.Color.White;
             this.btnThuoc.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnThuoc.CheckedState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThuoc.CheckedState.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThuoc.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(111)))));
-            this.btnThuoc.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.btnThuoc.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image12")));
             this.btnThuoc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThuoc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnThuoc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -195,44 +290,16 @@
             this.btnThuoc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
             this.btnThuoc.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThuoc.ForeColor = System.Drawing.Color.Gray;
-            this.btnThuoc.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            this.btnThuoc.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image13")));
             this.btnThuoc.Image = ((System.Drawing.Image)(resources.GetObject("btnThuoc.Image")));
             this.btnThuoc.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnThuoc.Location = new System.Drawing.Point(12, 493);
+            this.btnThuoc.Location = new System.Drawing.Point(12, 461);
             this.btnThuoc.Name = "btnThuoc";
-            this.btnThuoc.Size = new System.Drawing.Size(105, 36);
+            this.btnThuoc.Size = new System.Drawing.Size(105, 30);
             this.btnThuoc.TabIndex = 12;
             this.btnThuoc.Text = "Thuốc";
             this.btnThuoc.UseTransparentBackground = true;
             this.btnThuoc.Click += new System.EventHandler(this.btnThuoc_Click);
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Animated = true;
-            this.btnThoat.BackColor = System.Drawing.Color.Transparent;
-            this.btnThoat.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(145)))), ((int)(((byte)(109)))));
-            this.btnThoat.BorderRadius = 8;
-            this.btnThoat.BorderThickness = 1;
-            this.btnThoat.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnThoat.CheckedState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(111)))));
-            this.btnThoat.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
-            this.btnThoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnThoat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnThoat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThoat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThoat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
-            this.btnThoat.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.btnThoat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(145)))), ((int)(((byte)(109)))));
-            this.btnThoat.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
-            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
-            this.btnThoat.Location = new System.Drawing.Point(29, 658);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(66, 30);
-            this.btnThoat.TabIndex = 11;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseTransparentBackground = true;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click_1);
             // 
             // btnThuCung
             // 
@@ -244,9 +311,9 @@
             this.btnThuCung.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnThuCung.CheckedState.BorderColor = System.Drawing.Color.White;
             this.btnThuCung.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnThuCung.CheckedState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThuCung.CheckedState.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThuCung.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(111)))));
-            this.btnThuCung.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
+            this.btnThuCung.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image14")));
             this.btnThuCung.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThuCung.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnThuCung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -254,12 +321,12 @@
             this.btnThuCung.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
             this.btnThuCung.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThuCung.ForeColor = System.Drawing.Color.Gray;
-            this.btnThuCung.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
+            this.btnThuCung.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image15")));
             this.btnThuCung.Image = ((System.Drawing.Image)(resources.GetObject("btnThuCung.Image")));
             this.btnThuCung.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnThuCung.Location = new System.Drawing.Point(12, 451);
+            this.btnThuCung.Location = new System.Drawing.Point(12, 421);
             this.btnThuCung.Name = "btnThuCung";
-            this.btnThuCung.Size = new System.Drawing.Size(105, 36);
+            this.btnThuCung.Size = new System.Drawing.Size(105, 30);
             this.btnThuCung.TabIndex = 10;
             this.btnThuCung.Text = "    Thú cưng";
             this.btnThuCung.UseTransparentBackground = true;
@@ -276,9 +343,9 @@
             this.btnSach.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnSach.CheckedState.BorderColor = System.Drawing.Color.White;
             this.btnSach.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnSach.CheckedState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSach.CheckedState.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSach.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(111)))));
-            this.btnSach.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image10")));
+            this.btnSach.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image16")));
             this.btnSach.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSach.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSach.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -286,12 +353,12 @@
             this.btnSach.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
             this.btnSach.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSach.ForeColor = System.Drawing.Color.Gray;
-            this.btnSach.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image11")));
+            this.btnSach.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image17")));
             this.btnSach.Image = ((System.Drawing.Image)(resources.GetObject("btnSach.Image")));
             this.btnSach.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnSach.Location = new System.Drawing.Point(12, 409);
+            this.btnSach.Location = new System.Drawing.Point(12, 381);
             this.btnSach.Name = "btnSach";
-            this.btnSach.Size = new System.Drawing.Size(105, 36);
+            this.btnSach.Size = new System.Drawing.Size(105, 30);
             this.btnSach.TabIndex = 9;
             this.btnSach.Text = " Sách     ";
             this.btnSach.UseTransparentBackground = true;
@@ -308,9 +375,9 @@
             this.btnTheThao.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnTheThao.CheckedState.BorderColor = System.Drawing.Color.White;
             this.btnTheThao.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnTheThao.CheckedState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTheThao.CheckedState.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTheThao.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(111)))));
-            this.btnTheThao.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image12")));
+            this.btnTheThao.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image18")));
             this.btnTheThao.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnTheThao.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnTheThao.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -318,12 +385,12 @@
             this.btnTheThao.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
             this.btnTheThao.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTheThao.ForeColor = System.Drawing.Color.Gray;
-            this.btnTheThao.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image13")));
+            this.btnTheThao.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image19")));
             this.btnTheThao.Image = ((System.Drawing.Image)(resources.GetObject("btnTheThao.Image")));
             this.btnTheThao.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnTheThao.Location = new System.Drawing.Point(12, 367);
+            this.btnTheThao.Location = new System.Drawing.Point(12, 341);
             this.btnTheThao.Name = "btnTheThao";
-            this.btnTheThao.Size = new System.Drawing.Size(105, 36);
+            this.btnTheThao.Size = new System.Drawing.Size(105, 30);
             this.btnTheThao.TabIndex = 8;
             this.btnTheThao.Text = "   Thể thao";
             this.btnTheThao.UseTransparentBackground = true;
@@ -340,9 +407,9 @@
             this.btnDoChoi.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnDoChoi.CheckedState.BorderColor = System.Drawing.Color.White;
             this.btnDoChoi.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnDoChoi.CheckedState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoChoi.CheckedState.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDoChoi.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(111)))));
-            this.btnDoChoi.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image14")));
+            this.btnDoChoi.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image20")));
             this.btnDoChoi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDoChoi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDoChoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -350,12 +417,12 @@
             this.btnDoChoi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
             this.btnDoChoi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDoChoi.ForeColor = System.Drawing.Color.Gray;
-            this.btnDoChoi.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image15")));
+            this.btnDoChoi.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image21")));
             this.btnDoChoi.Image = ((System.Drawing.Image)(resources.GetObject("btnDoChoi.Image")));
             this.btnDoChoi.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDoChoi.Location = new System.Drawing.Point(12, 325);
+            this.btnDoChoi.Location = new System.Drawing.Point(12, 301);
             this.btnDoChoi.Name = "btnDoChoi";
-            this.btnDoChoi.Size = new System.Drawing.Size(105, 36);
+            this.btnDoChoi.Size = new System.Drawing.Size(105, 30);
             this.btnDoChoi.TabIndex = 4;
             this.btnDoChoi.Text = "  Đồ chơi";
             this.btnDoChoi.UseTransparentBackground = true;
@@ -372,22 +439,22 @@
             this.btnThucPham.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnThucPham.CheckedState.BorderColor = System.Drawing.Color.White;
             this.btnThucPham.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnThucPham.CheckedState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThucPham.CheckedState.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThucPham.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(111)))));
-            this.btnThucPham.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image16")));
+            this.btnThucPham.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image22")));
             this.btnThucPham.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThucPham.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnThucPham.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnThucPham.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnThucPham.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
-            this.btnThucPham.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThucPham.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThucPham.ForeColor = System.Drawing.Color.Gray;
-            this.btnThucPham.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image17")));
+            this.btnThucPham.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image23")));
             this.btnThucPham.Image = ((System.Drawing.Image)(resources.GetObject("btnThucPham.Image")));
             this.btnThucPham.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnThucPham.Location = new System.Drawing.Point(12, 283);
+            this.btnThucPham.Location = new System.Drawing.Point(12, 261);
             this.btnThucPham.Name = "btnThucPham";
-            this.btnThucPham.Size = new System.Drawing.Size(105, 36);
+            this.btnThucPham.Size = new System.Drawing.Size(105, 30);
             this.btnThucPham.TabIndex = 7;
             this.btnThucPham.Text = "      Thực phẩm";
             this.btnThucPham.UseTransparentBackground = true;
@@ -404,9 +471,9 @@
             this.btnMyPham.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnMyPham.CheckedState.BorderColor = System.Drawing.Color.White;
             this.btnMyPham.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnMyPham.CheckedState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMyPham.CheckedState.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMyPham.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(111)))));
-            this.btnMyPham.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image18")));
+            this.btnMyPham.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image24")));
             this.btnMyPham.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnMyPham.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnMyPham.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -414,12 +481,12 @@
             this.btnMyPham.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
             this.btnMyPham.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMyPham.ForeColor = System.Drawing.Color.Gray;
-            this.btnMyPham.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image19")));
+            this.btnMyPham.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image25")));
             this.btnMyPham.Image = ((System.Drawing.Image)(resources.GetObject("btnMyPham.Image")));
             this.btnMyPham.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnMyPham.Location = new System.Drawing.Point(12, 241);
+            this.btnMyPham.Location = new System.Drawing.Point(12, 221);
             this.btnMyPham.Name = "btnMyPham";
-            this.btnMyPham.Size = new System.Drawing.Size(105, 36);
+            this.btnMyPham.Size = new System.Drawing.Size(105, 30);
             this.btnMyPham.TabIndex = 6;
             this.btnMyPham.Text = "    Mỹ Phẩm";
             this.btnMyPham.UseTransparentBackground = true;
@@ -436,9 +503,9 @@
             this.btnGiaDung.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnGiaDung.CheckedState.BorderColor = System.Drawing.Color.White;
             this.btnGiaDung.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnGiaDung.CheckedState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGiaDung.CheckedState.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGiaDung.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(111)))));
-            this.btnGiaDung.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image20")));
+            this.btnGiaDung.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image26")));
             this.btnGiaDung.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGiaDung.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGiaDung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -446,12 +513,12 @@
             this.btnGiaDung.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
             this.btnGiaDung.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGiaDung.ForeColor = System.Drawing.Color.Gray;
-            this.btnGiaDung.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image21")));
+            this.btnGiaDung.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image27")));
             this.btnGiaDung.Image = ((System.Drawing.Image)(resources.GetObject("btnGiaDung.Image")));
             this.btnGiaDung.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnGiaDung.Location = new System.Drawing.Point(12, 199);
+            this.btnGiaDung.Location = new System.Drawing.Point(12, 181);
             this.btnGiaDung.Name = "btnGiaDung";
-            this.btnGiaDung.Size = new System.Drawing.Size(105, 36);
+            this.btnGiaDung.Size = new System.Drawing.Size(105, 30);
             this.btnGiaDung.TabIndex = 5;
             this.btnGiaDung.Text = "    Gia dụng";
             this.btnGiaDung.UseTransparentBackground = true;
@@ -468,9 +535,9 @@
             this.btnDienTu.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnDienTu.CheckedState.BorderColor = System.Drawing.Color.White;
             this.btnDienTu.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnDienTu.CheckedState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDienTu.CheckedState.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDienTu.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(111)))));
-            this.btnDienTu.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image22")));
+            this.btnDienTu.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image28")));
             this.btnDienTu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDienTu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDienTu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -478,12 +545,12 @@
             this.btnDienTu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
             this.btnDienTu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDienTu.ForeColor = System.Drawing.Color.Gray;
-            this.btnDienTu.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image23")));
+            this.btnDienTu.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image29")));
             this.btnDienTu.Image = ((System.Drawing.Image)(resources.GetObject("btnDienTu.Image")));
             this.btnDienTu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDienTu.Location = new System.Drawing.Point(12, 157);
+            this.btnDienTu.Location = new System.Drawing.Point(12, 141);
             this.btnDienTu.Name = "btnDienTu";
-            this.btnDienTu.Size = new System.Drawing.Size(105, 36);
+            this.btnDienTu.Size = new System.Drawing.Size(105, 30);
             this.btnDienTu.TabIndex = 4;
             this.btnDienTu.Text = "  Điện tử";
             this.btnDienTu.UseTransparentBackground = true;
@@ -500,9 +567,9 @@
             this.btnThoiTrang.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnThoiTrang.CheckedState.BorderColor = System.Drawing.Color.White;
             this.btnThoiTrang.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnThoiTrang.CheckedState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoiTrang.CheckedState.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoiTrang.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(111)))));
-            this.btnThoiTrang.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image24")));
+            this.btnThoiTrang.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image30")));
             this.btnThoiTrang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThoiTrang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnThoiTrang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -510,12 +577,12 @@
             this.btnThoiTrang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
             this.btnThoiTrang.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoiTrang.ForeColor = System.Drawing.Color.Gray;
-            this.btnThoiTrang.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image25")));
+            this.btnThoiTrang.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image31")));
             this.btnThoiTrang.Image = ((System.Drawing.Image)(resources.GetObject("btnThoiTrang.Image")));
             this.btnThoiTrang.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnThoiTrang.Location = new System.Drawing.Point(12, 115);
+            this.btnThoiTrang.Location = new System.Drawing.Point(12, 101);
             this.btnThoiTrang.Name = "btnThoiTrang";
-            this.btnThoiTrang.Size = new System.Drawing.Size(105, 36);
+            this.btnThoiTrang.Size = new System.Drawing.Size(105, 30);
             this.btnThoiTrang.TabIndex = 3;
             this.btnThoiTrang.Text = "      Thời trang";
             this.btnThoiTrang.UseTransparentBackground = true;
@@ -533,9 +600,9 @@
             this.btnIndex.Checked = true;
             this.btnIndex.CheckedState.BorderColor = System.Drawing.Color.White;
             this.btnIndex.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnIndex.CheckedState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIndex.CheckedState.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIndex.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(111)))));
-            this.btnIndex.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image26")));
+            this.btnIndex.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image32")));
             this.btnIndex.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnIndex.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnIndex.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -543,12 +610,12 @@
             this.btnIndex.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
             this.btnIndex.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIndex.ForeColor = System.Drawing.Color.Gray;
-            this.btnIndex.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image27")));
+            this.btnIndex.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image33")));
             this.btnIndex.Image = ((System.Drawing.Image)(resources.GetObject("btnIndex.Image")));
             this.btnIndex.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnIndex.Location = new System.Drawing.Point(12, 73);
+            this.btnIndex.Location = new System.Drawing.Point(12, 61);
             this.btnIndex.Name = "btnIndex";
-            this.btnIndex.Size = new System.Drawing.Size(105, 36);
+            this.btnIndex.Size = new System.Drawing.Size(105, 30);
             this.btnIndex.TabIndex = 0;
             this.btnIndex.Text = "      Trang chủ";
             this.btnIndex.UseTransparentBackground = true;
@@ -566,16 +633,33 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // imgSlide
+            // btnThoat
             // 
-            this.imgSlide.BackColor = System.Drawing.Color.Transparent;
-            this.imgSlide.Image = ((System.Drawing.Image)(resources.GetObject("imgSlide.Image")));
-            this.imgSlide.Location = new System.Drawing.Point(104, 55);
-            this.imgSlide.Name = "imgSlide";
-            this.imgSlide.Size = new System.Drawing.Size(26, 70);
-            this.imgSlide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imgSlide.TabIndex = 2;
-            this.imgSlide.TabStop = false;
+            this.btnThoat.Animated = true;
+            this.btnThoat.BackColor = System.Drawing.Color.Transparent;
+            this.btnThoat.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(145)))), ((int)(((byte)(109)))));
+            this.btnThoat.BorderRadius = 8;
+            this.btnThoat.BorderThickness = 1;
+            this.btnThoat.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnThoat.CheckedState.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(111)))));
+            this.btnThoat.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btnThoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThoat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThoat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThoat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThoat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
+            this.btnThoat.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.btnThoat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(145)))), ((int)(((byte)(109)))));
+            this.btnThoat.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
+            this.btnThoat.Location = new System.Drawing.Point(994, 15);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(66, 30);
+            this.btnThoat.TabIndex = 11;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseTransparentBackground = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click_1);
             // 
             // panel2
             // 
@@ -603,6 +687,7 @@
             this.panel3.Controls.Add(this.pictureBox5);
             this.panel3.Controls.Add(this.pictureBox4);
             this.panel3.Controls.Add(this.pictureBox3);
+            this.panel3.Controls.Add(this.btnThoat);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.guna2Separator1);
             this.panel3.Controls.Add(this.label1);
@@ -616,7 +701,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(1021, 6);
+            this.pictureBox6.Location = new System.Drawing.Point(927, 7);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(43, 43);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -627,7 +712,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(994, 19);
+            this.pictureBox5.Location = new System.Drawing.Point(900, 20);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(23, 25);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -638,7 +723,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(877, 9);
+            this.pictureBox4.Location = new System.Drawing.Point(806, 7);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(54, 44);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -649,7 +734,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(934, 19);
+            this.pictureBox3.Location = new System.Drawing.Point(863, 17);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(23, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -660,7 +745,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(852, 19);
+            this.pictureBox2.Location = new System.Drawing.Point(781, 17);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(23, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -702,7 +787,6 @@
             this.panel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSlide)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -724,7 +808,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button btnIndex;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox imgSlide;
         private Guna.UI2.WinForms.Guna2Button btnThoiTrang;
         private Guna.UI2.WinForms.Guna2Button btnThuCung;
         private Guna.UI2.WinForms.Guna2Button btnSach;
@@ -746,5 +829,8 @@
         private Guna.UI2.WinForms.Guna2Button btnThuoc;
         private Guna.UI2.WinForms.Guna2Button btnNhaCC;
         private Guna.UI2.WinForms.Guna2Button btnNhanVien;
+        private Guna.UI2.WinForms.Guna2Button btnMeVaBe;
+        private Guna.UI2.WinForms.Guna2Button btnNhapKhau;
+        private Guna.UI2.WinForms.Guna2Button btnGiaoDuc;
     }
 }

@@ -559,9 +559,9 @@
             this.label8.ForeColor = System.Drawing.Color.Blue;
             this.label8.Location = new System.Drawing.Point(23, 39);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(85, 15);
+            this.label8.Size = new System.Drawing.Size(115, 15);
             this.label8.TabIndex = 23;
-            this.label8.Text = "Bùi Hiền Trang";
+            this.label8.Text = "Ngô Thị Thảo Thơm";
             // 
             // guna2CircleProgressBar1
             // 
@@ -589,10 +589,10 @@
             this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(4, 2);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(7, 7);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(53, 57);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(46, 46);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox1.TabIndex = 22;
             this.guna2CirclePictureBox1.TabStop = false;

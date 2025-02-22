@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace appSuper
 {
-    public partial class loginForm : Form
+    public partial class giaoDucUC : UserControl
     {
-        public loginForm()
+        public giaoDucUC()
         {
             InitializeComponent();
         }
-
-        private void register_Click(object sender, EventArgs e)
-        {
-            registerForm registerForm = new registerForm();
-            registerForm.Show();
-            //this.Hide();
-        }
-
     }
 }

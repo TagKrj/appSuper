@@ -19,15 +19,9 @@ namespace appSuper
             trangChuUC uC = new trangChuUC();
             addUserControl(uC);
         }
-        private void moveImageBox(object sender)
-        {
-            Guna2Button b = (Guna2Button)sender;
-            imgSlide.Location = new Point(b.Location.X + 92, b.Location.Y - 17);
-            imgSlide.SendToBack();
-        }
         private void btnIndex_CheckedChanged(object sender, EventArgs e)
         {
-            moveImageBox(sender);
+      
         }
 
         private void btnThoat_Click_1(object sender, EventArgs e)
@@ -118,6 +112,24 @@ namespace appSuper
         private void btnNhaCC_Click(object sender, EventArgs e)
         {
             nhaCCUC uC = new nhaCCUC();
+            addUserControl(uC);
+        }
+
+        private void btnMeVaBe_Click_1(object sender, EventArgs e)
+        {
+            meVaBeUC uC = new meVaBeUC();
+            addUserControl(uC);
+        }
+
+        private void btnGiaoDuc_Click(object sender, EventArgs e)
+        {
+            giaoDucUC uC = new giaoDucUC();
+            addUserControl(uC);
+        }
+
+        private void btnNhapKhau_Click(object sender, EventArgs e)
+        {
+            nhapKhauUC uC = new nhapKhauUC();
             addUserControl(uC);
         }
     }
