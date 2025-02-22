@@ -16,7 +16,7 @@ namespace appSuper
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new indexForm());
+            Application.Run(new loginForm());
         }
     }
 }

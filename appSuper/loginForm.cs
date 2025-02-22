@@ -21,7 +21,7 @@ namespace appSuper
         {
             registerForm registerForm = new registerForm();
             registerForm.Show();
-            this.Hide();
+            //this.Hide();
         }
     }
 }

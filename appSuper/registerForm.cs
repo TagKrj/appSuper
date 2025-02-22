@@ -19,8 +19,8 @@ namespace appSuper
 
         private void login_Click(object sender, EventArgs e)
         {
-            loginForm loginForm = new loginForm();
-            loginForm.Show();
+            //loginForm loginForm = new loginForm();
+            //loginForm.Show();
 
             this.Close();
         }
