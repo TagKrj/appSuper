@@ -1,0 +1,47 @@
+# Visual Studio specific
+.vs/
+*.user
+*.suo
+*.cache
+*.pdb
+*.opendb
+
+# Build outputs
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.log
+*.tlog
+*.lastbuildstate
+*.csproj.user
+*.csproj.vspscc
+*.vcxproj.user
+*.sln.docstates
+
+# NuGet
+packages/
+*.nupkg
+project.lock.json
+
+# Rider specific
+.idea/
+*.sln.iml
+
+# Logs
+logs/
+*.log
+
+# Generated files
+GeneratedFiles/
+*.g.cs
+*.g.i.cs
+
+# Publish files
+publish/
+*.publish.xml
+
+# Other
+Thumbs.db
+Desktop.ini
