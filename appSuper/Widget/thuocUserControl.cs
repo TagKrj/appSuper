@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using appSuper.Controller;
+using appSuper.Model;
 
 namespace appSuper
 {
@@ -15,6 +17,18 @@ namespace appSuper
         public thuocUC()
         {
             InitializeComponent();
+            dgvThuoc.Rows.Clear();
+            LoadingData();
+        }
+
+        private void LoadingData()
+        {
+            List<Thuoc> thuoc = ThuocController.GetAllThuocs();
+            foreach (Thuoc t in thuoc)
+            {
+                dgvThuoc.Rows.Add(t.maSP, t.tenSP, t.nhaCungCap, t.soLuong, t.giaNhap, t.giaBan);
+
+            }
         }
     }
 }

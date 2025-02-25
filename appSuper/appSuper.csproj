@@ -55,6 +55,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database.cs" />
+    <Compile Include="Model\Thuoc.cs" />
+    <Compile Include="Controller\ThuocController.cs" />
     <Compile Include="Widget\dienTuUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
