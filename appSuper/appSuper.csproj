@@ -55,40 +55,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dienTuUserControl.cs">
+    <Compile Include="Widget\dienTuUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="dienTuUserControl.Designer.cs">
+    <Compile Include="Widget\dienTuUserControl.Designer.cs">
       <DependentUpon>dienTuUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="doChoiUserControl.cs">
+    <Compile Include="Widget\doChoiUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="doChoiUserControl.Designer.cs">
+    <Compile Include="Widget\doChoiUserControl.Designer.cs">
       <DependentUpon>doChoiUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="giaDungUserControl.cs">
+    <Compile Include="Widget\giaDungUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="giaDungUserControl.Designer.cs">
+    <Compile Include="Widget\giaDungUserControl.Designer.cs">
       <DependentUpon>giaDungUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="giaoDucUserControl.cs">
+    <Compile Include="Widget\giaoDucUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="giaoDucUserControl.Designer.cs">
+    <Compile Include="Widget\giaoDucUserControl.Designer.cs">
       <DependentUpon>giaoDucUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="meVaBeUserControl.cs">
+    <Compile Include="Widget\meVaBeUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="meVaBeUserControl.Designer.cs">
+    <Compile Include="Widget\meVaBeUserControl.Designer.cs">
       <DependentUpon>meVaBeUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="myPhamUserControl.cs">
+    <Compile Include="Widget\myPhamUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="myPhamUserControl.Designer.cs">
+    <Compile Include="Widget\myPhamUserControl.Designer.cs">
       <DependentUpon>myPhamUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="loginForm.cs">
@@ -103,48 +103,48 @@
     <Compile Include="indexForm.Designer.cs">
       <DependentUpon>indexForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="indexUserControl.cs">
+    <Compile Include="Widget\indexUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="indexUserControl.Designer.cs">
+    <Compile Include="Widget\indexUserControl.Designer.cs">
       <DependentUpon>indexUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="nhaCCUserControl.cs">
+    <Compile Include="Widget\nhaCCUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="nhaCCUserControl.Designer.cs">
+    <Compile Include="Widget\nhaCCUserControl.Designer.cs">
       <DependentUpon>nhaCCUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="nhanVienUserControl.cs">
+    <Compile Include="Widget\nhanVienUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="nhanVienUserControl.Designer.cs">
+    <Compile Include="Widget\nhanVienUserControl.Designer.cs">
       <DependentUpon>nhanVienUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="nhapKhauUserControl.cs">
+    <Compile Include="Widget\nhapKhauUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="nhapKhauUserControl.Designer.cs">
+    <Compile Include="Widget\nhapKhauUserControl.Designer.cs">
       <DependentUpon>nhapKhauUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="sachUserControl.cs">
+    <Compile Include="Widget\sachUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="sachUserControl.Designer.cs">
+    <Compile Include="Widget\sachUserControl.Designer.cs">
       <DependentUpon>sachUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="theThaoUserControl.cs">
+    <Compile Include="Widget\theThaoUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="theThaoUserControl.Designer.cs">
+    <Compile Include="Widget\theThaoUserControl.Designer.cs">
       <DependentUpon>theThaoUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="thoiTrangUserControl.cs">
+    <Compile Include="Widget\thoiTrangUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="thoiTrangUserControl.Designer.cs">
+    <Compile Include="Widget\thoiTrangUserControl.Designer.cs">
       <DependentUpon>thoiTrangUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="registerForm.cs">
@@ -153,58 +153,58 @@
     <Compile Include="registerForm.Designer.cs">
       <DependentUpon>registerForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="thucPhamUserControl.cs">
+    <Compile Include="Widget\thucPhamUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="thucPhamUserControl.Designer.cs">
+    <Compile Include="Widget\thucPhamUserControl.Designer.cs">
       <DependentUpon>thucPhamUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="thuCungUserControl.cs">
+    <Compile Include="Widget\thuCungUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="thuCungUserControl.Designer.cs">
+    <Compile Include="Widget\thuCungUserControl.Designer.cs">
       <DependentUpon>thuCungUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="thuocUserControl.cs">
+    <Compile Include="Widget\thuocUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="thuocUserControl.Designer.cs">
+    <Compile Include="Widget\thuocUserControl.Designer.cs">
       <DependentUpon>thuocUserControl.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="dienTuUserControl.resx">
+    <EmbeddedResource Include="Widget\dienTuUserControl.resx">
       <DependentUpon>dienTuUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="doChoiUserControl.resx">
+    <EmbeddedResource Include="Widget\doChoiUserControl.resx">
       <DependentUpon>doChoiUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="giaDungUserControl.resx">
+    <EmbeddedResource Include="Widget\giaDungUserControl.resx">
       <DependentUpon>giaDungUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="giaoDucUserControl.resx">
+    <EmbeddedResource Include="Widget\giaoDucUserControl.resx">
       <DependentUpon>giaoDucUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="indexForm.resx">
       <DependentUpon>indexForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="indexUserControl.resx">
+    <EmbeddedResource Include="Widget\indexUserControl.resx">
       <DependentUpon>indexUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="meVaBeUserControl.resx">
+    <EmbeddedResource Include="Widget\meVaBeUserControl.resx">
       <DependentUpon>meVaBeUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="myPhamUserControl.resx">
+    <EmbeddedResource Include="Widget\myPhamUserControl.resx">
       <DependentUpon>myPhamUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="nhaCCUserControl.resx">
+    <EmbeddedResource Include="Widget\nhaCCUserControl.resx">
       <DependentUpon>nhaCCUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="nhanVienUserControl.resx">
+    <EmbeddedResource Include="Widget\nhanVienUserControl.resx">
       <DependentUpon>nhanVienUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="nhapKhauUserControl.resx">
+    <EmbeddedResource Include="Widget\nhapKhauUserControl.resx">
       <DependentUpon>nhapKhauUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -216,25 +216,25 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="sachUserControl.resx">
+    <EmbeddedResource Include="Widget\sachUserControl.resx">
       <DependentUpon>sachUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="theThaoUserControl.resx">
+    <EmbeddedResource Include="Widget\theThaoUserControl.resx">
       <DependentUpon>theThaoUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="thoiTrangUserControl.resx">
+    <EmbeddedResource Include="Widget\thoiTrangUserControl.resx">
       <DependentUpon>thoiTrangUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="registerForm.resx">
       <DependentUpon>registerForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="thucPhamUserControl.resx">
+    <EmbeddedResource Include="Widget\thucPhamUserControl.resx">
       <DependentUpon>thucPhamUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="thuCungUserControl.resx">
+    <EmbeddedResource Include="Widget\thuCungUserControl.resx">
       <DependentUpon>thuCungUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="thuocUserControl.resx">
+    <EmbeddedResource Include="Widget\thuocUserControl.resx">
       <DependentUpon>thuocUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -251,5 +251,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
