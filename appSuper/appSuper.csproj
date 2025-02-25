@@ -91,16 +91,16 @@
     <Compile Include="Widget\myPhamUserControl.Designer.cs">
       <DependentUpon>myPhamUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="loginForm.cs">
+    <Compile Include="View\loginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="loginForm.Designer.cs">
+    <Compile Include="View\loginForm.Designer.cs">
       <DependentUpon>loginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="indexForm.cs">
+    <Compile Include="View\indexForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="indexForm.Designer.cs">
+    <Compile Include="View\indexForm.Designer.cs">
       <DependentUpon>indexForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Widget\indexUserControl.cs">
@@ -147,10 +147,10 @@
     <Compile Include="Widget\thoiTrangUserControl.Designer.cs">
       <DependentUpon>thoiTrangUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="registerForm.cs">
+    <Compile Include="View\registerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="registerForm.Designer.cs">
+    <Compile Include="View\registerForm.Designer.cs">
       <DependentUpon>registerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Widget\thucPhamUserControl.cs">
@@ -183,7 +183,7 @@
     <EmbeddedResource Include="Widget\giaoDucUserControl.resx">
       <DependentUpon>giaoDucUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="indexForm.resx">
+    <EmbeddedResource Include="View\indexForm.resx">
       <DependentUpon>indexForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Widget\indexUserControl.resx">
@@ -195,7 +195,7 @@
     <EmbeddedResource Include="Widget\myPhamUserControl.resx">
       <DependentUpon>myPhamUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="loginForm.resx">
+    <EmbeddedResource Include="View\loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Widget\nhaCCUserControl.resx">
@@ -225,7 +225,7 @@
     <EmbeddedResource Include="Widget\thoiTrangUserControl.resx">
       <DependentUpon>thoiTrangUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="registerForm.resx">
+    <EmbeddedResource Include="View\registerForm.resx">
       <DependentUpon>registerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Widget\thucPhamUserControl.resx">
