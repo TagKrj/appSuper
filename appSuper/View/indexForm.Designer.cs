@@ -127,7 +127,7 @@
             this.btnNhapKhau.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnNhapKhau.CheckedState.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhapKhau.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(111)))));
-            this.btnNhapKhau.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btnNhapKhau.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.btnNhapKhau.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnNhapKhau.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnNhapKhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -135,7 +135,7 @@
             this.btnNhapKhau.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
             this.btnNhapKhau.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhapKhau.ForeColor = System.Drawing.Color.Gray;
-            this.btnNhapKhau.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnNhapKhau.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             this.btnNhapKhau.Image = ((System.Drawing.Image)(resources.GetObject("btnNhapKhau.Image")));
             this.btnNhapKhau.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnNhapKhau.Location = new System.Drawing.Point(12, 661);
@@ -158,7 +158,7 @@
             this.btnGiaoDuc.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnGiaoDuc.CheckedState.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGiaoDuc.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(111)))));
-            this.btnGiaoDuc.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.btnGiaoDuc.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             this.btnGiaoDuc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGiaoDuc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGiaoDuc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -166,7 +166,7 @@
             this.btnGiaoDuc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
             this.btnGiaoDuc.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGiaoDuc.ForeColor = System.Drawing.Color.Gray;
-            this.btnGiaoDuc.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.btnGiaoDuc.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
             this.btnGiaoDuc.Image = ((System.Drawing.Image)(resources.GetObject("btnGiaoDuc.Image")));
             this.btnGiaoDuc.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnGiaoDuc.Location = new System.Drawing.Point(12, 621);
@@ -189,7 +189,7 @@
             this.btnMeVaBe.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnMeVaBe.CheckedState.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMeVaBe.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(111)))));
-            this.btnMeVaBe.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.btnMeVaBe.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
             this.btnMeVaBe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnMeVaBe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnMeVaBe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -197,7 +197,7 @@
             this.btnMeVaBe.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(235)))));
             this.btnMeVaBe.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMeVaBe.ForeColor = System.Drawing.Color.Gray;
-            this.btnMeVaBe.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            this.btnMeVaBe.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
             this.btnMeVaBe.Image = ((System.Drawing.Image)(resources.GetObject("btnMeVaBe.Image")));
             this.btnMeVaBe.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMeVaBe.Location = new System.Drawing.Point(12, 581);

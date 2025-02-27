@@ -55,7 +55,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\NhaCungCapController.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="Model\NhaCungCap.cs" />
     <Compile Include="Model\Thuoc.cs" />
     <Compile Include="Controller\ThuocController.cs" />
     <Compile Include="Widget\dienTuUserControl.cs">

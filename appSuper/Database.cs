@@ -6,7 +6,7 @@ namespace WinFormsMVC.Model
 {
     public class Database
     {
-        private static readonly string connectionString = "Server=ADMIN-PC;Database=Suppermaket;Trusted_Connection=True;";
+        private static readonly string connectionString = "Server=ADMIN-PC;Database=Supermarket;Trusted_Connection=True;";
 
 
         public static SqlConnection GetConnection()

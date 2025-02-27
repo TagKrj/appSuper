@@ -20,5 +20,15 @@ namespace appSuper.Model
         public decimal giaBan { get; set; }
         public DateTime createdAt { get; set; }
         public DateTime updatedAt { get; set; }
+        public Thuoc() { }
+        public Thuoc(String maSP, String tenSP, String nhaCungCap, int soLuong, decimal giaNhap, decimal giaBan)
+        {
+            this.maSP = maSP;
+            this.tenSP = tenSP;
+            this.nhaCungCap = nhaCungCap;
+            this.soLuong = soLuong;
+            this.giaNhap = giaNhap;
+            this.giaBan = giaBan;
+        }
     }
 }
