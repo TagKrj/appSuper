@@ -1,29 +1,29 @@
-﻿using System;
+﻿using appSuper.Model;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using appSuper.Model;
 using WinFormsMVC.Model;
 
 namespace appSuper.Controller
 {
-    class ThuocController
+    class ThoiTrangController
     {
-        public static List<Thuoc> getAllThuocs()
+        public static List<ThoiTrang> getAllThoiTrangs()
         {
-            List<Thuoc> Thuocs = new List<Thuoc>();
+            List<ThoiTrang> ThoiTrangs = new List<ThoiTrang>();
 
             using (SqlConnection conn = Database.GetConnection()) // Sử dụng DatabaseHelper
             {
-                string query = "SELECT * FROM Thuoc";
+                string query = "SELECT * FROM ThoiTrang";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        Thuocs.Add(new Thuoc
+                        ThoiTrangs.Add(new ThoiTrang
                         {
                             maSP = reader["maSP"].ToString(),
                             tenSP = reader["tenSP"].ToString(),
@@ -36,64 +36,64 @@ namespace appSuper.Controller
                 }
             }
 
-            return Thuocs;
+            return ThoiTrangs;
         }
 
-        public static void AddThuocs(Thuoc thuoc)
+        public static void AddThoiTrangs(ThoiTrang ThoiTrang)
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                string query = "INSERT INTO Thuoc(maSP, tenSP, nhaCungCap, soLuong, giaBan, giaNhap) " +
+                string query = "INSERT INTO ThoiTrang(maSP, tenSP, nhaCungCap, soLuong, giaBan, giaNhap) " +
                                "VALUES (@maSP, @tenSP, @nhaCungCap, @soLuong, @giaBan, @giaNhap)";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@maSP", thuoc.maSP);
-                    cmd.Parameters.AddWithValue("@tenSP", thuoc.tenSP);
-                    cmd.Parameters.AddWithValue("@nhaCungCap", thuoc.nhaCungCap);
-                    cmd.Parameters.AddWithValue("@soLuong", thuoc.soLuong);
-                    cmd.Parameters.AddWithValue("@giaBan", thuoc.giaBan);
-                    cmd.Parameters.AddWithValue("@giaNhap", thuoc.giaNhap);
+                    cmd.Parameters.AddWithValue("@maSP", ThoiTrang.maSP);
+                    cmd.Parameters.AddWithValue("@tenSP", ThoiTrang.tenSP);
+                    cmd.Parameters.AddWithValue("@nhaCungCap", ThoiTrang.nhaCungCap);
+                    cmd.Parameters.AddWithValue("@soLuong", ThoiTrang.soLuong);
+                    cmd.Parameters.AddWithValue("@giaBan", ThoiTrang.giaBan);
+                    cmd.Parameters.AddWithValue("@giaNhap", ThoiTrang.giaNhap);
                     cmd.ExecuteNonQuery();
                 }
             }
         }
-        public static void UpdateThuocs(Thuoc thuoc)
+        public static void UpdateThoiTrangs(ThoiTrang ThoiTrang)
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                string query = "UPDATE Thuoc SET tenSP = @tenSP, nhaCungCap = @nhaCungCap, soLuong = @soLuong, giaBan = @giaBan, giaNhap = @giaNhap WHERE maSP = @maSP";
+                string query = "UPDATE ThoiTrang SET tenSP = @tenSP, nhaCungCap = @nhaCungCap, soLuong = @soLuong, giaBan = @giaBan, giaNhap = @giaNhap WHERE maSP = @maSP";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@maSP", thuoc.maSP);
-                    cmd.Parameters.AddWithValue("@tenSP", thuoc.tenSP);
-                    cmd.Parameters.AddWithValue("@nhaCungCap", thuoc.nhaCungCap);
-                    cmd.Parameters.AddWithValue("@soLuong", thuoc.soLuong);
-                    cmd.Parameters.AddWithValue("@giaBan", thuoc.giaBan);
-                    cmd.Parameters.AddWithValue("@giaNhap", thuoc.giaNhap);
+                    cmd.Parameters.AddWithValue("@maSP", ThoiTrang.maSP);
+                    cmd.Parameters.AddWithValue("@tenSP", ThoiTrang.tenSP);
+                    cmd.Parameters.AddWithValue("@nhaCungCap", ThoiTrang.nhaCungCap);
+                    cmd.Parameters.AddWithValue("@soLuong", ThoiTrang.soLuong);
+                    cmd.Parameters.AddWithValue("@giaBan", ThoiTrang.giaBan);
+                    cmd.Parameters.AddWithValue("@giaNhap", ThoiTrang.giaNhap);
                     cmd.ExecuteNonQuery();
                 }
             }
         }
-        public static void DeleteThuocs(Thuoc thuoc)
+        public static void DeleteThoiTrangs(ThoiTrang ThoiTrang)
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                string query = "DELETE FROM Thuoc WHERE maSP = @maSP";
+                string query = "DELETE FROM ThoiTrang WHERE maSP = @maSP";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@maSP", thuoc.maSP);
+                    cmd.Parameters.AddWithValue("@maSP", ThoiTrang.maSP);
                     cmd.ExecuteNonQuery();
                 }
             }
         }
-        public static List<Thuoc> SearchThuocs(string searchValue)
+        public static List<ThoiTrang> SearchThoiTrangs(string searchValue)
         {
-            List<Thuoc> Thuocs = new List<Thuoc>();
+            List<ThoiTrang> ThoiTrangs = new List<ThoiTrang>();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                string query = "SELECT * FROM Thuoc WHERE maSP LIKE @search OR tenSP LIKE @search OR nhaCungCap LIKE @search";
+                string query = "SELECT * FROM ThoiTrang WHERE maSP LIKE @search OR tenSP LIKE @search OR nhaCungCap LIKE @search";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@search", "%" + searchValue + "%");
@@ -101,7 +101,7 @@ namespace appSuper.Controller
                     {
                         while (reader.Read())
                         {
-                            Thuocs.Add(new Thuoc
+                            ThoiTrangs.Add(new ThoiTrang
                             {
                                 maSP = reader["maSP"].ToString(),
                                 tenSP = reader["tenSP"].ToString(),
@@ -115,8 +115,7 @@ namespace appSuper.Controller
                 }
             }
 
-            return Thuocs;
+            return ThoiTrangs;
         }
-
     }
 }

@@ -56,8 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\NhaCungCapController.cs" />
+    <Compile Include="Controller\NhanVienController.cs" />
+    <Compile Include="Controller\ThoiTrangController.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="Model\NhaCungCap.cs" />
+    <Compile Include="Model\NhanVien.cs" />
+    <Compile Include="Model\ThoiTrang.cs" />
     <Compile Include="Model\Thuoc.cs" />
     <Compile Include="Controller\ThuocController.cs" />
     <Compile Include="Widget\dienTuUserControl.cs">

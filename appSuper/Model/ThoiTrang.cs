@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WinFormsMVC.Model;
 
 namespace appSuper.Model
 {
-    class Thuoc
+    class ThoiTrang
     {
         public int Id { get; set; }
         public String maSP { get; set; }
@@ -20,6 +17,5 @@ namespace appSuper.Model
         public decimal giaBan { get; set; }
         public DateTime createdAt { get; set; }
         public DateTime updatedAt { get; set; }
-        public Thuoc() { }
     }
 }

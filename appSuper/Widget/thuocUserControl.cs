@@ -105,7 +105,7 @@ namespace appSuper
         {
             dgvThuoc.Rows.Clear();
             var searchThuoc = txtSearchThuoc.Text;
-            List<Thuoc> thuoc = ThuocController.SearchThuocsWithMaSP(searchThuoc);
+            List<Thuoc> thuoc = ThuocController.SearchThuocs(searchThuoc);
             foreach (Thuoc t in thuoc)
             {
                 dgvThuoc.Rows.Add(t.maSP, t.tenSP, t.nhaCungCap, t.soLuong, t.giaNhap, t.giaBan);
