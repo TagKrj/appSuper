@@ -246,6 +246,7 @@
     <EmbeddedResource Include="Widget\thuocUserControl.resx">
       <DependentUpon>thuocUserControl.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Database.cs.example" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
