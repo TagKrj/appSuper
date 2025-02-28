@@ -56,11 +56,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\DienTuController.cs" />
+    <Compile Include="Controller\GiaDungController.cs" />
     <Compile Include="Controller\NhaCungCapController.cs" />
     <Compile Include="Controller\NhanVienController.cs" />
     <Compile Include="Controller\ThoiTrangController.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="Model\DienTu.cs" />
+    <Compile Include="Model\GiaDung.cs" />
     <Compile Include="Model\NhaCungCap.cs" />
     <Compile Include="Model\NhanVien.cs" />
     <Compile Include="Model\ThoiTrang.cs" />
