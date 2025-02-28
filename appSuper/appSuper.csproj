@@ -55,10 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\DienTuController.cs" />
     <Compile Include="Controller\NhaCungCapController.cs" />
     <Compile Include="Controller\NhanVienController.cs" />
     <Compile Include="Controller\ThoiTrangController.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="Model\DienTu.cs" />
     <Compile Include="Model\NhaCungCap.cs" />
     <Compile Include="Model\NhanVien.cs" />
     <Compile Include="Model\ThoiTrang.cs" />
@@ -246,7 +248,6 @@
     <EmbeddedResource Include="Widget\thuocUserControl.resx">
       <DependentUpon>thuocUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Database.cs.example" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

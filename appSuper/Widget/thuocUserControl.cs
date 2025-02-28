@@ -17,7 +17,7 @@ namespace appSuper
         public thuocUC()
         {
             InitializeComponent();
-            cboNCCThuoc.Items.Clear();
+            cboNhaCungCapThuoc.Items.Clear();
             LoadingData();
             LoadingCboNCC();
 
@@ -38,7 +38,7 @@ namespace appSuper
             List<NhaCungCap> nhaCungCaps = NhaCungCapController.getAllNhaCungCaps();
             foreach (var nhaCungCap in nhaCungCaps)
             {
-                cboNCCThuoc.Items.Add(nhaCungCap.maNhaCC);
+                cboNhaCungCapThuoc.Items.Add(nhaCungCap.maNhaCC);
             }
         }
 
@@ -48,7 +48,7 @@ namespace appSuper
             {
                 maSP = txtMaSPThuoc.Text,
                 tenSP = txtTenSPThuoc.Text,
-                nhaCungCap = cboNCCThuoc.SelectedItem.ToString(),
+                nhaCungCap = cboNhaCungCapThuoc.SelectedItem.ToString(),
                 soLuong = int.Parse(txtSoLuongThuoc.Text),
                 giaNhap = decimal.Parse(txtGiaNhapThuoc.Text),
                 giaBan = decimal.Parse(txtGiaBanThuoc.Text)
@@ -64,7 +64,7 @@ namespace appSuper
                 DataGridViewRow row = dgvThuoc.Rows[e.RowIndex];
                 txtMaSPThuoc.Text = row.Cells[0].Value?.ToString();
                 txtTenSPThuoc.Text = row.Cells[1].Value?.ToString();
-                cboNCCThuoc.SelectedItem = row.Cells[2].Value?.ToString();
+                cboNhaCungCapThuoc.SelectedItem = row.Cells[2].Value?.ToString();
                 txtSoLuongThuoc.Text = row.Cells[3].Value?.ToString();
                 txtGiaNhapThuoc.Text = row.Cells[4].Value?.ToString();
                 txtGiaBanThuoc.Text = row.Cells[5].Value?.ToString();
@@ -77,7 +77,7 @@ namespace appSuper
             {
                 maSP = txtMaSPThuoc.Text,
                 tenSP = txtTenSPThuoc.Text,
-                nhaCungCap = cboNCCThuoc.SelectedItem.ToString(),
+                nhaCungCap = cboNhaCungCapThuoc.SelectedItem.ToString(),
                 soLuong = int.Parse(txtSoLuongThuoc.Text),
                 giaNhap = decimal.Parse(txtGiaNhapThuoc.Text),
                 giaBan = decimal.Parse(txtGiaBanThuoc.Text)
@@ -92,7 +92,7 @@ namespace appSuper
             {
                 maSP = txtMaSPThuoc.Text,
                 tenSP = txtTenSPThuoc.Text,
-                nhaCungCap = cboNCCThuoc.SelectedItem.ToString(),
+                nhaCungCap = cboNhaCungCapThuoc.SelectedItem.ToString(),
                 soLuong = int.Parse(txtSoLuongThuoc.Text),
                 giaNhap = decimal.Parse(txtGiaNhapThuoc.Text),
                 giaBan = decimal.Parse(txtGiaBanThuoc.Text)

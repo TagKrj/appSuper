@@ -57,7 +57,7 @@
             this.btnSuaThuoc = new Guna.UI2.WinForms.Guna2Button();
             this.btnThemThuoc = new Guna.UI2.WinForms.Guna2Button();
             this.txtSearchThuoc = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cboNCCThuoc = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cboNhaCungCapThuoc = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtGiaNhapThuoc = new Guna.UI2.WinForms.Guna2TextBox();
@@ -461,27 +461,27 @@
             this.txtSearchThuoc.TabIndex = 140;
             this.txtSearchThuoc.TextChanged += new System.EventHandler(this.txtSearchThuoc_TextChanged);
             // 
-            // cboNCCThuoc
+            // cboNhaCungCapThuoc
             // 
-            this.cboNCCThuoc.BackColor = System.Drawing.Color.Transparent;
-            this.cboNCCThuoc.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.cboNCCThuoc.BorderRadius = 8;
-            this.cboNCCThuoc.BorderThickness = 0;
-            this.cboNCCThuoc.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboNCCThuoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboNCCThuoc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(235)))), ((int)(((byte)(239)))));
-            this.cboNCCThuoc.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboNCCThuoc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboNCCThuoc.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.cboNCCThuoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(26)))), ((int)(((byte)(68)))));
-            this.cboNCCThuoc.ItemHeight = 30;
-            this.cboNCCThuoc.Items.AddRange(new object[] {
+            this.cboNhaCungCapThuoc.BackColor = System.Drawing.Color.Transparent;
+            this.cboNhaCungCapThuoc.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.cboNhaCungCapThuoc.BorderRadius = 8;
+            this.cboNhaCungCapThuoc.BorderThickness = 0;
+            this.cboNhaCungCapThuoc.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboNhaCungCapThuoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboNhaCungCapThuoc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(235)))), ((int)(((byte)(239)))));
+            this.cboNhaCungCapThuoc.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboNhaCungCapThuoc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboNhaCungCapThuoc.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.cboNhaCungCapThuoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(26)))), ((int)(((byte)(68)))));
+            this.cboNhaCungCapThuoc.ItemHeight = 30;
+            this.cboNhaCungCapThuoc.Items.AddRange(new object[] {
             "Nhà cung cấp"});
-            this.cboNCCThuoc.Location = new System.Drawing.Point(728, 138);
-            this.cboNCCThuoc.Name = "cboNCCThuoc";
-            this.cboNCCThuoc.Size = new System.Drawing.Size(307, 36);
-            this.cboNCCThuoc.StartIndex = 0;
-            this.cboNCCThuoc.TabIndex = 139;
+            this.cboNhaCungCapThuoc.Location = new System.Drawing.Point(728, 138);
+            this.cboNhaCungCapThuoc.Name = "cboNhaCungCapThuoc";
+            this.cboNhaCungCapThuoc.Size = new System.Drawing.Size(307, 36);
+            this.cboNhaCungCapThuoc.StartIndex = 0;
+            this.cboNhaCungCapThuoc.TabIndex = 139;
             // 
             // label6
             // 
@@ -685,7 +685,7 @@
             this.Controls.Add(this.btnSuaThuoc);
             this.Controls.Add(this.btnThemThuoc);
             this.Controls.Add(this.txtSearchThuoc);
-            this.Controls.Add(this.cboNCCThuoc);
+            this.Controls.Add(this.cboNhaCungCapThuoc);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtGiaNhapThuoc);
@@ -730,7 +730,7 @@
         private Guna.UI2.WinForms.Guna2Button btnSuaThuoc;
         private Guna.UI2.WinForms.Guna2Button btnThemThuoc;
         private Guna.UI2.WinForms.Guna2TextBox txtSearchThuoc;
-        private Guna.UI2.WinForms.Guna2ComboBox cboNCCThuoc;
+        private Guna.UI2.WinForms.Guna2ComboBox cboNhaCungCapThuoc;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2TextBox txtGiaNhapThuoc;
