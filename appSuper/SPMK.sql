@@ -1,4 +1,4 @@
-dbo.MeVaBe﻿CREATE DATABASE Supermarket;
+﻿CREATE DATABASE Supermarket
 USE Supermarket;
 
 CREATE TABLE NhaCungCap (

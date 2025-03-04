@@ -56,22 +56,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\DienTuController.cs" />
+    <Compile Include="Controller\DoChoiController.cs" />
     <Compile Include="Controller\GiaDungController.cs" />
     <Compile Include="Controller\GiaoDucController.cs" />
     <Compile Include="Controller\MeVaBeController.cs" />
+    <Compile Include="Controller\MyPhamController.cs" />
     <Compile Include="Controller\NhaCungCapController.cs" />
     <Compile Include="Controller\NhanVienController.cs" />
     <Compile Include="Controller\NhapKhauController.cs" />
     <Compile Include="Controller\ThoiTrangController.cs" />
+    <Compile Include="Controller\ThucPhamController.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="Model\DienTu.cs" />
+    <Compile Include="Model\DoChoi.cs" />
     <Compile Include="Model\GiaDung.cs" />
     <Compile Include="Model\GiaoDuc.cs" />
     <Compile Include="Model\MeVaBe.cs" />
+    <Compile Include="Model\MyPham.cs" />
     <Compile Include="Model\NhaCungCap.cs" />
     <Compile Include="Model\NhanVien.cs" />
     <Compile Include="Model\NhapKhau.cs" />
     <Compile Include="Model\ThoiTrang.cs" />
+    <Compile Include="Model\ThucPham.cs" />
     <Compile Include="Model\Thuoc.cs" />
     <Compile Include="Controller\ThuocController.cs" />
     <Compile Include="Widget\dienTuUserControl.cs">
@@ -192,6 +198,7 @@
     </Compile>
     <EmbeddedResource Include="Widget\dienTuUserControl.resx">
       <DependentUpon>dienTuUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Widget\doChoiUserControl.resx">
       <DependentUpon>doChoiUserControl.cs</DependentUpon>
