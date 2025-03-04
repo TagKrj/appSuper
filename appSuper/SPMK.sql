@@ -205,8 +205,3 @@ WHERE maSP = 'MASP001';
 -- Xóa sản phẩm
 DELETE FROM ThoiTrang  
 WHERE maSP = 'MASP001';
-
--- Xuất hàng (giảm số lượng)
-UPDATE ThoiTrang  
-SET soLuong = soLuong - 8, updatedAt = GETDATE()  
-WHERE maSP = 'MASP001' AND soLuong >= 8;
