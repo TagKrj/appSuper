@@ -64,8 +64,11 @@
     <Compile Include="Controller\NhaCungCapController.cs" />
     <Compile Include="Controller\NhanVienController.cs" />
     <Compile Include="Controller\NhapKhauController.cs" />
+    <Compile Include="Controller\SachController.cs" />
+    <Compile Include="Controller\TheThaoController.cs" />
     <Compile Include="Controller\ThoiTrangController.cs" />
     <Compile Include="Controller\ThucPhamController.cs" />
+    <Compile Include="Controller\ThuCungController.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="Model\DienTu.cs" />
     <Compile Include="Model\DoChoi.cs" />
@@ -76,8 +79,11 @@
     <Compile Include="Model\NhaCungCap.cs" />
     <Compile Include="Model\NhanVien.cs" />
     <Compile Include="Model\NhapKhau.cs" />
+    <Compile Include="Model\Sach.cs" />
+    <Compile Include="Model\TheThao.cs" />
     <Compile Include="Model\ThoiTrang.cs" />
     <Compile Include="Model\ThucPham.cs" />
+    <Compile Include="Model\ThuCung.cs" />
     <Compile Include="Model\Thuoc.cs" />
     <Compile Include="Controller\ThuocController.cs" />
     <Compile Include="Widget\dienTuUserControl.cs">
