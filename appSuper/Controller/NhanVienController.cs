@@ -125,6 +125,33 @@ namespace appSuper.Controller
             }
             return NhanViens;
         }
+
+        public bool CheckMa(string maNV)
+        {
+            using (SqlConnection conn = Database.GetConnection())
+            {
+                string query = "SELECT COUNT(*) FROM NhanVien WHERE maNV = @maNV";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@maNV", maNV);
+                    int count = (int)cmd.ExecuteScalar();
+                    return count > 0;
+                }
+            }
+        }
+        public bool CheckMail(string email)
+        {
+            using (SqlConnection conn = Database.GetConnection())
+            {
+                string query = "SELECT COUNT(*) FROM NhanVien WHERE email = @email";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@email", email);
+                    int count = (int)cmd.ExecuteScalar();
+                    return count > 0;
+                }
+            }
+        }
         public static void ThemmoiNhanVien(string maNV, string tenNV, string soDT, string diaChi, string email, DateTime namSinh)
         {
             using (SqlConnection conn = Database.GetConnection())

@@ -57,6 +57,26 @@ namespace appSuper
 
         private void btnThemMeVaBe_Click(object sender, EventArgs e)
         {
+
+            var MeVaBeController = new MeVaBeController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPMeVaBe.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongMeVaBe.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapMeVaBe.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanMeVaBe.Text))
+            {
+                return;
+            }
             var meVaBe = new MeVaBe
             {
                 maSP = txtMaSPMeVaBe.Text,
@@ -73,6 +93,26 @@ namespace appSuper
 
         private void btnSuaMeVaBe_Click(object sender, EventArgs e)
         {
+
+            var MeVaBeController = new MeVaBeController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPMeVaBe.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongMeVaBe.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapMeVaBe.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanMeVaBe.Text))
+            {
+                return;
+            }
             var meVaBe = new MeVaBe
             {
                 maSP = txtMaSPMeVaBe.Text,
@@ -82,6 +122,12 @@ namespace appSuper
                 giaNhap = decimal.Parse(txtGiaNhapMeVaBe.Text),
                 giaBan = decimal.Parse(txtGiaBanMeVaBe.Text)
             };
+            if (MeVaBeController.CheckMa(meVaBe.maSP))
+            {
+                MessageBox.Show("Mã sản phẩm đã tồn tại!");
+                return;
+            }
+
             MeVaBeController.UpdateMeVaBes(meVaBe);
             LoadingData();
             ClearTxt();

@@ -57,6 +57,26 @@ namespace appSuper
 
         private void btnThemMyPham_Click(object sender, EventArgs e)
         {
+
+            var MyPhamController = new MyPhamController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPMyPham.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongMyPham.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapMyPham.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanMyPham.Text))
+            {
+                return;
+            }
             var MyPham = new MyPham
             {
                 maSP = txtMaSPMyPham.Text,
@@ -73,6 +93,26 @@ namespace appSuper
 
         private void btnSuaMyPham_Click(object sender, EventArgs e)
         {
+
+            var MyPhamController = new MyPhamController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPMyPham.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongMyPham.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapMyPham.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanMyPham.Text))
+            {
+                return;
+            }
             var MyPham = new MyPham
             {
                 maSP = txtMaSPMyPham.Text,
@@ -82,6 +122,12 @@ namespace appSuper
                 giaNhap = decimal.Parse(txtGiaNhapMyPham.Text),
                 giaBan = decimal.Parse(txtGiaBanMyPham.Text),
             };
+            if (MyPhamController.CheckMa(MyPham.maSP))
+            {
+                MessageBox.Show("Mã sản phẩm đã tồn tại!");
+                return;
+            }
+
             MyPhamController.UpdateMyPhams(MyPham);
             LoadingData();
             ClearTxt();

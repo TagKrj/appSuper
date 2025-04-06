@@ -52,6 +52,26 @@ namespace appSuper
 
         private void btnThemThucPham_Click(object sender, EventArgs e)
         {
+
+            var ThucPhamController = new ThucPhamController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPThucPham.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongThucPham.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapThucPham.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanThucPham.Text))
+            {
+                return;
+            }
             var ThucPham = new ThucPham
             {
                 maSP = txtMaSPThucPham.Text,
@@ -61,6 +81,12 @@ namespace appSuper
                 giaNhap = decimal.Parse(txtGiaNhapThucPham.Text),
                 giaBan = decimal.Parse(txtGiaBanThucPham.Text),
             };
+            if (ThucPhamController.CheckMa(ThucPham.maSP))
+            {
+                MessageBox.Show("Mã sản phẩm đã tồn tại!");
+                return;
+            }
+
             ThucPhamController.AddThucPhams(ThucPham);
             LoadingData();
             ClearTxt();
@@ -68,6 +94,26 @@ namespace appSuper
 
         private void btnSuaThucPham_Click(object sender, EventArgs e)
         {
+
+            var ThucPhamController = new ThucPhamController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPThucPham.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongThucPham.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapThucPham.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanThucPham.Text))
+            {
+                return;
+            }
             var ThucPham = new ThucPham
             {
                 maSP = txtMaSPThucPham.Text,

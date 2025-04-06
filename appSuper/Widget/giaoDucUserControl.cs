@@ -56,6 +56,26 @@ namespace appSuper
 
         private void btnThemGiaoDuc_Click(object sender, EventArgs e)
         {
+
+            var GiaoDucController = new GiaoDucController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPGiaoDuc.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongGiaoDuc.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapGiaoDuc.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanGiaoDuc.Text))
+            {
+                return;
+            }
             var giaoDuc = new GiaoDuc
             {
                 maSP = txtMaSPGiaoDuc.Text,
@@ -72,6 +92,25 @@ namespace appSuper
 
         private void btnSuaGiaoDuc_Click(object sender, EventArgs e)
         {
+            var GiaoDucController = new GiaoDucController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPGiaoDuc.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongGiaoDuc.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapGiaoDuc.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanGiaoDuc.Text))
+            {
+                return;
+            }
             var giaoDuc = new GiaoDuc
             {
                 maSP = txtMaSPGiaoDuc.Text,
@@ -81,6 +120,12 @@ namespace appSuper
                 giaNhap = decimal.Parse(txtGiaNhapGiaoDuc.Text),
                 giaBan = decimal.Parse(txtGiaBanGiaoDuc.Text)
             };
+            if (GiaoDucController.CheckMa(giaoDuc.maSP))
+            {
+                MessageBox.Show("Mã sản phẩm đã tồn tại!");
+                return;
+            }
+
             GiaoDucController.UpdateGiaoDucs(giaoDuc);
             LoadingData();
             ClearTxt();

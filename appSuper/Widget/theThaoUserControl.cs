@@ -28,6 +28,26 @@ namespace appSuper
 
         private void btnThemTheThao_Click(object sender, System.EventArgs e)
         {
+
+            var TheThaoController = new TheThaoController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPTheThao.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongTheThao.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapTheThao.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanTheThao.Text))
+            {
+                return;
+            }
             var TheThao = new TheThao
             {
                 maSP = txtMaSPTheThao.Text,
@@ -43,6 +63,26 @@ namespace appSuper
 
         private void btnSuaTheThao_Click(object sender, System.EventArgs e)
         {
+
+            var TheThaoController = new TheThaoController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPTheThao.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongTheThao.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapTheThao.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanTheThao.Text))
+            {
+                return;
+            }
             var TheThao = new TheThao
             {
                 maSP = txtMaSPTheThao.Text,
@@ -52,6 +92,12 @@ namespace appSuper
                 giaNhap = decimal.Parse(txtGiaNhapTheThao.Text),
                 giaBan = decimal.Parse(txtGiaBanTheThao.Text)
             };
+            if (TheThaoController.CheckMa(TheThao.maSP))
+            {
+                MessageBox.Show("Mã sản phẩm đã tồn tại!");
+                return;
+            }
+
             TheThaoController.UpdateTheThaos(TheThao);
             LoadingData();
         }

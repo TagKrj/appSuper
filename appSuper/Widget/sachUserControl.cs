@@ -38,6 +38,26 @@ namespace appSuper
 
         private void btnThemSach_Click(object sender, EventArgs e)
         {
+
+            var SachController = new SachController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPSach.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongSach.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapSach.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanSach.Text))
+            {
+                return;
+            }
             var Sach = new Sach
             {
                 maSP = txtMaSPSach.Text,
@@ -53,6 +73,26 @@ namespace appSuper
 
         private void btnSuaSach_Click(object sender, EventArgs e)
         {
+
+            var SachController = new SachController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPSach.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongSach.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapSach.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanSach.Text))
+            {
+                return;
+            }
             var Sach = new Sach
             {
                 maSP = txtMaSPSach.Text,
@@ -62,6 +102,12 @@ namespace appSuper
                 giaNhap = decimal.Parse(txtGiaNhapSach.Text),
                 giaBan = decimal.Parse(txtGiaBanSach.Text)
             };
+            if (SachController.CheckMa(Sach.maSP))
+            {
+                MessageBox.Show("Mã sản phẩm đã tồn tại!");
+                return;
+            }
+
             SachController.UpdateSaches(Sach);
             LoadingData();
         }

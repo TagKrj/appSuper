@@ -120,6 +120,19 @@ namespace appSuper.Controller
 
             return ThucPhams;
         }
+        public bool CheckMa(string maSP)
+        {
+            using (SqlConnection conn = Database.GetConnection())
+            {
+                string query = "SELECT COUNT(*) FROM ThucPham WHERE maSP = @maSP";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@maSP", maSP);
+                    int count = (int)cmd.ExecuteScalar();
+                    return count > 0;
+                }
+            }
+        }
         public static void ThemmoiThucPham(string maSP, string tenSP, string nhaCungCap, int soLuong, decimal giaNhap, decimal giaBan)
         {
             using (SqlConnection conn = Database.GetConnection())

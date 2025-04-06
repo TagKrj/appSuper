@@ -32,6 +32,22 @@ namespace appSuper
 
         private void btnThemNV_Click(object sender, EventArgs e)
         {
+            var NhanVienController = new NhanVienController();
+            var check = new CheckController();
+            if (!check.CheckMaNotNull(txtMaNV.Text))
+            {
+                return; 
+            }
+            if (!check.CheckMail(txtEmail.Text))
+            {
+                return; 
+            }
+            if (!check.CheckSdt(txtSoDT.Text))
+            {
+                return;
+            }
+
+
             var nhanViens = new NhanVien
             {
                 maNV = txtMaNV.Text,
@@ -41,12 +57,38 @@ namespace appSuper
                 email = txtEmail.Text,
                 diaChi = txtDiaChi.Text
             };
+            if (NhanVienController.CheckMa(nhanViens.maNV))
+            {
+                MessageBox.Show("Mã sản phẩm đã tồn tại!");
+                return;
+            }
+            if (NhanVienController.CheckMail(nhanViens.email))
+            {
+                MessageBox.Show("Mail đã tồn tại!");
+                return;
+            }
+
             NhanVienController.AddNhanViens(nhanViens);
             LoadingData();
         }
 
         private void btnSuaNV_Click(object sender, EventArgs e)
         {
+            var NhanVienController = new NhanVienController();
+            var check = new CheckController();
+            if (!check.CheckMaNotNull(txtMaNV.Text))
+            {
+                return;
+            }
+            if (!check.CheckMail(txtEmail.Text))
+            {
+                return;
+            }
+            if (!check.CheckSdt(txtSoDT.Text))
+            {
+                return;
+            }
+
             var nhanViens = new NhanVien
             {
                 maNV = txtMaNV.Text,

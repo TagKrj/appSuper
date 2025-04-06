@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using appSuper.Controller;
 using appSuper.Model;
+using Guna.UI2.AnimatorNS;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 using xls = Microsoft.Office.Interop.Excel;
 
 namespace appSuper
@@ -41,16 +43,45 @@ namespace appSuper
             }
         }
         private void btnThemDienTu_Click(object sender, EventArgs e)
+
         {
+            var dienTuController = new DienTuController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPDienTu.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongDienTu.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapDienTu.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanDienTu.Text))
+            {
+                return;
+            }
+
             var DienTu = new DienTu
             {
                 maSP = txtMaSPDienTu.Text,
+                
                 tenSP = txtTenSPDienTu.Text, 
                 nhaCungCap = cboNhaCungCapDienTu.SelectedItem.ToString(),
                 soLuong = int.Parse(txtSoLuongDienTu.Text),
                 giaNhap = decimal.Parse(txtGiaNhapDienTu.Text),
                 giaBan = decimal.Parse(txtGiaBanDienTu.Text),
             };
+            if (dienTuController.CheckMa(DienTu.maSP))
+            {
+                MessageBox.Show("Mã sản phẩm đã tồn tại!");
+                return;
+            }
+
+
             DienTuController.AddDienTus(DienTu);
             LoadingData();
         }

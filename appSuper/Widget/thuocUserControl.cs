@@ -45,6 +45,26 @@ namespace appSuper
 
         private void btnThemThuoc_Click(object sender, EventArgs e)
         {
+
+            var ThuocController = new ThuocController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPThuoc.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongThuoc.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapThuoc.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanThuoc.Text))
+            {
+                return;
+            }
             var thuoc = new Thuoc
             {
                 maSP = txtMaSPThuoc.Text,
@@ -60,6 +80,7 @@ namespace appSuper
 
         private void dgvThuoc_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dgvThuoc.Rows[e.RowIndex];
@@ -74,6 +95,25 @@ namespace appSuper
 
         private void btnSuaThuoc_Click(object sender, EventArgs e)
         {
+            var ThuocController = new ThuocController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPThuoc.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongThuoc.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapThuoc.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanThuoc.Text))
+            {
+                return;
+            }
             var thuoc = new Thuoc
             {
                 maSP = txtMaSPThuoc.Text,
@@ -83,6 +123,12 @@ namespace appSuper
                 giaNhap = decimal.Parse(txtGiaNhapThuoc.Text),
                 giaBan = decimal.Parse(txtGiaBanThuoc.Text)
             };
+            if (ThuocController.CheckMa(thuoc.maSP))
+            {
+                MessageBox.Show("Mã sản phẩm đã tồn tại!");
+                return;
+            }
+
             ThuocController.UpdateThuocs(thuoc);
             LoadingData();
         }

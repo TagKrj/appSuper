@@ -118,6 +118,19 @@ namespace appSuper.Controller
             }
             return ThuCungs;
         }
+        public bool CheckMa(string maSP)
+        {
+            using (SqlConnection conn = Database.GetConnection())
+            {
+                string query = "SELECT COUNT(*) FROM ThuCung WHERE maSP = @maSP";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@maSP", maSP);
+                    int count = (int)cmd.ExecuteScalar();
+                    return count > 0;
+                }
+            }
+        }
         public static void ThemmoiThuCung(string maSP, string tenSP, string nhaCungCap, int soLuong, decimal giaNhap, decimal giaBan)
         {
             using (SqlConnection conn = Database.GetConnection())

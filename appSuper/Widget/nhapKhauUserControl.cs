@@ -54,6 +54,26 @@ namespace appSuper
 
         private void btnThemNhapKhau_Click(object sender, EventArgs e)
         {
+            
+            var NhapKhauController = new NhapKhauController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPNhapKhau.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongNhapKhau.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapNhapKhau.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanNhapKhau.Text))
+            {
+                return;
+            }
             var nhapKhau = new NhapKhau
             {
                 maSP = txtMaSPNhapKhau.Text,
@@ -70,6 +90,26 @@ namespace appSuper
 
         private void btnSuaNhapKhau_Click(object sender, EventArgs e)
         {
+
+            var NhapKhauController = new NhapKhauController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPNhapKhau.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongNhapKhau.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapNhapKhau.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanNhapKhau.Text))
+            {
+                return;
+            }
             var nhapKhau = new NhapKhau
             {
                 maSP = txtMaSPNhapKhau.Text,
@@ -79,6 +119,12 @@ namespace appSuper
                 giaNhap = decimal.Parse(txtGiaNhapNhapKhau.Text),
                 giaBan = decimal.Parse(txtGiaBanNhapKhau.Text)
             };
+            if (NhapKhauController.CheckMa(nhapKhau.maSP))
+            {
+                MessageBox.Show("Mã sản phẩm đã tồn tại!");
+                return;
+            }
+
             NhapKhauController.UpdateNhapKhaus(nhapKhau);
             LoadingData();
             ClearTxt();

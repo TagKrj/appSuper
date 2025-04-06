@@ -34,6 +34,26 @@ namespace appSuper
 
         private void btnThemThoiTrang_Click(object sender, EventArgs e)
         {
+
+            var ThoiTrangController = new ThoiTrangController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPThoiTrang.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongThoiTrang.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapThoiTrang.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanThoiTrang.Text))
+            {
+                return;
+            }
             var thoiTrang = new ThoiTrang
             {
                 maSP = txtMaSPThoiTrang.Text,
@@ -49,6 +69,26 @@ namespace appSuper
 
         private void btnSuaThoiTrang_Click(object sender, EventArgs e)
         {
+
+            var ThoiTrangController = new ThoiTrangController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPThoiTrang.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongThoiTrang.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapThoiTrang.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanThoiTrang.Text))
+            {
+                return;
+            }
             var thoiTrang = new ThoiTrang
             {
                 maSP = txtMaSPThoiTrang.Text,
@@ -58,6 +98,12 @@ namespace appSuper
                 giaNhap = decimal.Parse(txtGiaNhapThoiTrang.Text),
                 giaBan = decimal.Parse(txtGiaBanThoiTrang.Text)
             };
+            if (ThoiTrangController.CheckMa(thoiTrang.maSP))
+            {
+                MessageBox.Show("Mã sản phẩm đã tồn tại!");
+                return;
+            }
+
             ThoiTrangController.UpdateThoiTrangs(thoiTrang);
             LoadingData();
         }

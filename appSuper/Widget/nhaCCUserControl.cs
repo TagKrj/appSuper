@@ -33,18 +33,39 @@ namespace appSuper
 
         private void btnThemNhaCC_Click(object sender, EventArgs e)
         {
+
+            var NhaCungCapController = new NhaCungCapController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaNhaCC.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+         
             var nhaCungCap = new NhaCungCap
             {
                 maNhaCC = txtMaNhaCC.Text,
                 tenNhaCC = txtTenNhaCC.Text,
                 diaChi = txtDiaChiNhaCC.Text
             };
+            if (NhaCungCapController.CheckMa(nhaCungCap.maNhaCC))
+            {
+                MessageBox.Show("Mã sản phẩm đã tồn tại!");
+                return;
+            }
+
             NhaCungCapController.AddNhaCungCaps(nhaCungCap);
             LoadingData();
         }
 
         private void btnSuaNhaCC_Click(object sender, EventArgs e)
         {
+            var NhaCungCapController = new NhaCungCapController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaNhaCC.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+          
             var nhaCungCap = new NhaCungCap
             {
                 maNhaCC = txtMaNhaCC.Text,

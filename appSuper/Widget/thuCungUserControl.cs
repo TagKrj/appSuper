@@ -37,6 +37,26 @@ namespace appSuper
         }
         private void btnThemThuCung_Click(object sender, EventArgs e)
         {
+
+            var ThuCungController = new ThuCungController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPThuCung.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongThuCung.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapThuCung.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanThuCung.Text))
+            {
+                return;
+            }
             var ThuCung = new ThuCung
             {
                 maSP = txtMaSPThuCung.Text,
@@ -46,11 +66,37 @@ namespace appSuper
                 giaNhap = decimal.Parse(txtGiaNhapThuCung.Text),
                 giaBan = decimal.Parse(txtGiaBanThuCung.Text)
             };
+            if (ThuCungController.CheckMa(ThuCung.maSP))
+            {
+                MessageBox.Show("Mã sản phẩm đã tồn tại!");
+                return;
+            }
+
             ThuCungController.AddThuCungs(ThuCung);
             LoadingData();
         }
         private void btnSuaThuCung_Click(object sender, EventArgs e)
         {
+
+            var ThuCungController = new ThuCungController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPThuCung.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongThuCung.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapThuCung.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanThuCung.Text))
+            {
+                return;
+            }
             var ThuCung = new ThuCung
             {
                 maSP = txtMaSPThuCung.Text,

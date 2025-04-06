@@ -44,6 +44,25 @@ namespace appSuper
 
         private void btnThemGiaDung_Click(object sender, EventArgs e)
         {
+            var GiaDungController = new GiaDungController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPGiaDung.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongGiaDung.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapGiaDung.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanGiaDung.Text))
+            {
+                return;
+            }
             var GiaDung = new GiaDung
             {
                 maSP = txtMaSPGiaDung.Text,
@@ -59,6 +78,25 @@ namespace appSuper
 
         private void btnSuaGiaDung_Click(object sender, EventArgs e)
         {
+            var GiaDungController = new GiaDungController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPGiaDung.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongGiaDung.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapGiaDung.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanGiaDung.Text))
+            {
+                return;
+            }
             var GiaDung = new GiaDung
             {
                 maSP = txtMaSPGiaDung.Text,
@@ -68,6 +106,12 @@ namespace appSuper
                 giaNhap = decimal.Parse(txtGiaNhapGiaDung.Text),
                 giaBan = decimal.Parse(txtGiaBanGiaDung.Text),
             };
+            if (GiaDungController.CheckMa(GiaDung.maSP))
+            {
+                MessageBox.Show("Mã sản phẩm đã tồn tại!");
+                return;
+            }
+
             GiaDungController.UpdateGiaDungs(GiaDung);
             LoadingData();
         }

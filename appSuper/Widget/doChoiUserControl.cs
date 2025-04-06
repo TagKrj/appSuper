@@ -52,6 +52,26 @@ namespace appSuper
 
         private void txtThemDoChoi_Click(object sender, EventArgs e)
         {
+
+            var DoChoiController = new DoChoiController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPDoChoi.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongDoChoi.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapDoChoi.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanDoChoi.Text))
+            {
+                return;
+            }
             var DoChoi = new DoChoi
             {
                 maSP = txtMaSPDoChoi.Text,
@@ -68,6 +88,25 @@ namespace appSuper
 
         private void txtSuaDoChoi_Click(object sender, EventArgs e)
         {
+            var DoChoiController = new DoChoiController();
+            var checkController = new CheckController();
+            if (!checkController.CheckMaNotNull(txtMaSPDoChoi.Text))
+            {
+                return; // Nếu không hợp lệ, dừng xử lý
+            }
+            if (!int.TryParse(txtSoLuongDoChoi.Text, out int soLuong))
+            {
+                MessageBox.Show("Vui lòng nhập số lượng hợp lệ (chỉ được nhập số)!");
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaNhapDoChoi.Text))
+            {
+                return;
+            }
+            if (!checkController.CheckGia(txtGiaBanDoChoi.Text))
+            {
+                return;
+            }
             var DoChoi = new DoChoi
             {
                 maSP = txtMaSPDoChoi.Text,
@@ -77,6 +116,12 @@ namespace appSuper
                 giaNhap = decimal.Parse(txtGiaNhapDoChoi.Text),
                 giaBan = decimal.Parse(txtGiaBanDoChoi.Text),
             };
+            if (DoChoiController.CheckMa(DoChoi.maSP))
+            {
+                MessageBox.Show("Mã sản phẩm đã tồn tại!");
+                return;
+            }
+
             DoChoiController.UpdateDoChois(DoChoi);
             LoadingData();
             ClearTxt();

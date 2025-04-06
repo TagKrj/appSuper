@@ -107,6 +107,21 @@ namespace appSuper.Controller
             }
             return NhaCungCaps;
         }
+
+
+        public bool CheckMa(string maNhaCC)
+        {
+            using (SqlConnection conn = Database.GetConnection())
+            {
+                string query = "SELECT COUNT(*) FROM NhaCungCap WHERE maNhaCC = @maNhaCC";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@maNhaCC", maNhaCC);
+                    int count = (int)cmd.ExecuteScalar();
+                    return count > 0;
+                }
+            }
+        }
         public static void ThemmoiNhaCungCap(string maNhaCC, string tenNhaCC, string diaChi)
         {
             using (SqlConnection conn = Database.GetConnection())
