@@ -1,4 +1,4 @@
-﻿CREATE DATABASE Supermarket
+kiemtraa﻿CREATE DATABASE Supermarket
 USE Supermarket;
 
 CREATE TABLE NhaCungCap (

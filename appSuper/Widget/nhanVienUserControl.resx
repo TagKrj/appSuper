@@ -120,6 +120,9 @@
   <metadata name="guna2DragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>68</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnXoaNV.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -194,7 +197,7 @@
   <data name="guna2CirclePictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJ4AAACmCAYAAAArrDa7AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAzclJREFUeF7k/eV7m1m27o1m7e6qVNDMjImZGWRbkgUWM5OZmZmdOI7DDE5ih7FS
+        vQAADr0BR/uQrQAAzclJREFUeF7k/eV7m1m27o1m7e6qVNDMjImZGWRbkgUWM5OZmZmdOI7DDE5ih7FS
         VV0Na+39vucPu881pvy4HMmphtW1uvc5H+7rETzin+4xx5h0zNTUAE5GmfgIiWBSCGCU82GQ1UPfVA+d
         tI5dNsob/GSW8f1kkvHZc9lUMliVTTDJxTDJJTDLhX7nsvMPvadf3hsfOrnITwaZCIYmf/k+nj1HUwP0
         0kZ2P/tsTSJ23dh09Gv6vhaTrBE6ei9+ovsk0DaJoWkSQSMVQS1thFZG18XsskoihFIsgEosZOf6ij1G

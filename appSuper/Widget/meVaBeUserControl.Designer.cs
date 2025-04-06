@@ -46,8 +46,14 @@
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dgvMeVaBe = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.clMaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clTenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clSL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clGiaNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clGiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnXuatExcelMevaBe = new Guna.UI2.WinForms.Guna2Button();
+            this.btnNhapExcelMevaBe = new Guna.UI2.WinForms.Guna2Button();
             this.btnXoaMeVaBe = new Guna.UI2.WinForms.Guna2Button();
             this.btnSuaMeVaBe = new Guna.UI2.WinForms.Guna2Button();
             this.btnThemMeVaBe = new Guna.UI2.WinForms.Guna2Button();
@@ -63,12 +69,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtMaSPMeVaBe = new Guna.UI2.WinForms.Guna2TextBox();
-            this.clMaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clTenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clSL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clGiaNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clGiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2CustomGradientPanel2.SuspendLayout();
             this.guna2CircleProgressBar1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
@@ -317,39 +317,83 @@
             this.dgvMeVaBe.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvMeVaBe.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMeVaBe_CellClick);
             // 
-            // guna2Button5
+            // clMaSP
             // 
-            this.guna2Button5.Animated = true;
-            this.guna2Button5.BorderRadius = 10;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(252)))), ((int)(((byte)(213)))));
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.guna2Button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(121)))));
-            this.guna2Button5.Location = new System.Drawing.Point(925, 322);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(111, 27);
-            this.guna2Button5.TabIndex = 62;
-            this.guna2Button5.Text = "Xuất excel";
+            this.clMaSP.HeaderText = "Mã Sản Phẩm";
+            this.clMaSP.MinimumWidth = 6;
+            this.clMaSP.Name = "clMaSP";
+            this.clMaSP.ReadOnly = true;
             // 
-            // guna2Button4
+            // clTenSP
             // 
-            this.guna2Button4.Animated = true;
-            this.guna2Button4.BorderRadius = 10;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(252)))), ((int)(((byte)(213)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.guna2Button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(121)))));
-            this.guna2Button4.Location = new System.Drawing.Point(797, 322);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(122, 27);
-            this.guna2Button4.TabIndex = 61;
-            this.guna2Button4.Text = "Nhập excel";
+            this.clTenSP.HeaderText = "Tên Sản Phẩm";
+            this.clTenSP.MinimumWidth = 6;
+            this.clTenSP.Name = "clTenSP";
+            this.clTenSP.ReadOnly = true;
+            // 
+            // clNCC
+            // 
+            this.clNCC.HeaderText = "Nhà Cung Cấp";
+            this.clNCC.MinimumWidth = 6;
+            this.clNCC.Name = "clNCC";
+            this.clNCC.ReadOnly = true;
+            // 
+            // clSL
+            // 
+            this.clSL.HeaderText = "Số Lượng";
+            this.clSL.MinimumWidth = 6;
+            this.clSL.Name = "clSL";
+            this.clSL.ReadOnly = true;
+            // 
+            // clGiaNhap
+            // 
+            this.clGiaNhap.HeaderText = "Giá Nhập";
+            this.clGiaNhap.MinimumWidth = 6;
+            this.clGiaNhap.Name = "clGiaNhap";
+            this.clGiaNhap.ReadOnly = true;
+            // 
+            // clGiaBan
+            // 
+            this.clGiaBan.HeaderText = "Giá Bán";
+            this.clGiaBan.MinimumWidth = 6;
+            this.clGiaBan.Name = "clGiaBan";
+            this.clGiaBan.ReadOnly = true;
+            // 
+            // btnXuatExcelMevaBe
+            // 
+            this.btnXuatExcelMevaBe.Animated = true;
+            this.btnXuatExcelMevaBe.BorderRadius = 10;
+            this.btnXuatExcelMevaBe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXuatExcelMevaBe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXuatExcelMevaBe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXuatExcelMevaBe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXuatExcelMevaBe.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(252)))), ((int)(((byte)(213)))));
+            this.btnXuatExcelMevaBe.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnXuatExcelMevaBe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(121)))));
+            this.btnXuatExcelMevaBe.Location = new System.Drawing.Point(925, 322);
+            this.btnXuatExcelMevaBe.Name = "btnXuatExcelMevaBe";
+            this.btnXuatExcelMevaBe.Size = new System.Drawing.Size(111, 27);
+            this.btnXuatExcelMevaBe.TabIndex = 62;
+            this.btnXuatExcelMevaBe.Text = "Xuất excel";
+            this.btnXuatExcelMevaBe.Click += new System.EventHandler(this.btnXuatExcelMevaBe_Click);
+            // 
+            // btnNhapExcelMevaBe
+            // 
+            this.btnNhapExcelMevaBe.Animated = true;
+            this.btnNhapExcelMevaBe.BorderRadius = 10;
+            this.btnNhapExcelMevaBe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnNhapExcelMevaBe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnNhapExcelMevaBe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNhapExcelMevaBe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnNhapExcelMevaBe.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(252)))), ((int)(((byte)(213)))));
+            this.btnNhapExcelMevaBe.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnNhapExcelMevaBe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(121)))));
+            this.btnNhapExcelMevaBe.Location = new System.Drawing.Point(797, 322);
+            this.btnNhapExcelMevaBe.Name = "btnNhapExcelMevaBe";
+            this.btnNhapExcelMevaBe.Size = new System.Drawing.Size(122, 27);
+            this.btnNhapExcelMevaBe.TabIndex = 61;
+            this.btnNhapExcelMevaBe.Text = "Nhập excel";
+            this.btnNhapExcelMevaBe.Click += new System.EventHandler(this.btnNhapExcelMevaBe_Click);
             // 
             // btnXoaMeVaBe
             // 
@@ -625,48 +669,6 @@
             this.txtMaSPMeVaBe.Size = new System.Drawing.Size(307, 40);
             this.txtMaSPMeVaBe.TabIndex = 46;
             // 
-            // clMaSP
-            // 
-            this.clMaSP.HeaderText = "Mã Sản Phẩm";
-            this.clMaSP.MinimumWidth = 6;
-            this.clMaSP.Name = "clMaSP";
-            this.clMaSP.ReadOnly = true;
-            // 
-            // clTenSP
-            // 
-            this.clTenSP.HeaderText = "Tên Sản Phẩm";
-            this.clTenSP.MinimumWidth = 6;
-            this.clTenSP.Name = "clTenSP";
-            this.clTenSP.ReadOnly = true;
-            // 
-            // clNCC
-            // 
-            this.clNCC.HeaderText = "Nhà Cung Cấp";
-            this.clNCC.MinimumWidth = 6;
-            this.clNCC.Name = "clNCC";
-            this.clNCC.ReadOnly = true;
-            // 
-            // clSL
-            // 
-            this.clSL.HeaderText = "Số Lượng";
-            this.clSL.MinimumWidth = 6;
-            this.clSL.Name = "clSL";
-            this.clSL.ReadOnly = true;
-            // 
-            // clGiaNhap
-            // 
-            this.clGiaNhap.HeaderText = "Giá Nhập";
-            this.clGiaNhap.MinimumWidth = 6;
-            this.clGiaNhap.Name = "clGiaNhap";
-            this.clGiaNhap.ReadOnly = true;
-            // 
-            // clGiaBan
-            // 
-            this.clGiaBan.HeaderText = "Giá Bán";
-            this.clGiaBan.MinimumWidth = 6;
-            this.clGiaBan.Name = "clGiaBan";
-            this.clGiaBan.ReadOnly = true;
-            // 
             // meVaBeUC
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -676,8 +678,8 @@
             this.Controls.Add(this.txtGiaBanMeVaBe);
             this.Controls.Add(this.guna2CustomGradientPanel2);
             this.Controls.Add(this.guna2CustomGradientPanel1);
-            this.Controls.Add(this.guna2Button5);
-            this.Controls.Add(this.guna2Button4);
+            this.Controls.Add(this.btnXuatExcelMevaBe);
+            this.Controls.Add(this.btnNhapExcelMevaBe);
             this.Controls.Add(this.btnXoaMeVaBe);
             this.Controls.Add(this.btnSuaMeVaBe);
             this.Controls.Add(this.btnThemMeVaBe);
@@ -722,8 +724,8 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2DataGridView dgvMeVaBe;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2Button btnXuatExcelMevaBe;
+        private Guna.UI2.WinForms.Guna2Button btnNhapExcelMevaBe;
         private Guna.UI2.WinForms.Guna2Button btnXoaMeVaBe;
         private Guna.UI2.WinForms.Guna2Button btnSuaMeVaBe;
         private Guna.UI2.WinForms.Guna2Button btnThemMeVaBe;

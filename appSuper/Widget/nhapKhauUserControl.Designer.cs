@@ -46,8 +46,14 @@
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dgvNhapKhau = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.clMaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clTenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clSL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clGiaNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clGiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnXuatExcelNhapKhau = new Guna.UI2.WinForms.Guna2Button();
+            this.btnNhapExcelNhapKhau = new Guna.UI2.WinForms.Guna2Button();
             this.btnXoaNhapKhau = new Guna.UI2.WinForms.Guna2Button();
             this.btnSuaNhapKhau = new Guna.UI2.WinForms.Guna2Button();
             this.btnThemNhapKhau = new Guna.UI2.WinForms.Guna2Button();
@@ -63,12 +69,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtMaSPNhapKhau = new Guna.UI2.WinForms.Guna2TextBox();
-            this.clMaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clTenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clSL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clGiaNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clGiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2CustomGradientPanel2.SuspendLayout();
             this.guna2CircleProgressBar1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
@@ -319,39 +319,83 @@
             this.dgvNhapKhau.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvNhapKhau.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhapKhau_CellClick);
             // 
-            // guna2Button5
+            // clMaSP
             // 
-            this.guna2Button5.Animated = true;
-            this.guna2Button5.BorderRadius = 10;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(252)))), ((int)(((byte)(213)))));
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.guna2Button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(121)))));
-            this.guna2Button5.Location = new System.Drawing.Point(925, 322);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(111, 27);
-            this.guna2Button5.TabIndex = 84;
-            this.guna2Button5.Text = "Xuất excel";
+            this.clMaSP.HeaderText = "Mã Sản Phẩm\t";
+            this.clMaSP.MinimumWidth = 6;
+            this.clMaSP.Name = "clMaSP";
+            this.clMaSP.ReadOnly = true;
             // 
-            // guna2Button4
+            // clTenSP
             // 
-            this.guna2Button4.Animated = true;
-            this.guna2Button4.BorderRadius = 10;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(252)))), ((int)(((byte)(213)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.guna2Button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(121)))));
-            this.guna2Button4.Location = new System.Drawing.Point(797, 322);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(122, 27);
-            this.guna2Button4.TabIndex = 83;
-            this.guna2Button4.Text = "Nhập excel";
+            this.clTenSP.HeaderText = "Tên Sản Phẩm";
+            this.clTenSP.MinimumWidth = 6;
+            this.clTenSP.Name = "clTenSP";
+            this.clTenSP.ReadOnly = true;
+            // 
+            // clNCC
+            // 
+            this.clNCC.HeaderText = "Nhà Cung Cấp";
+            this.clNCC.MinimumWidth = 6;
+            this.clNCC.Name = "clNCC";
+            this.clNCC.ReadOnly = true;
+            // 
+            // clSL
+            // 
+            this.clSL.HeaderText = "Số Lượng";
+            this.clSL.MinimumWidth = 6;
+            this.clSL.Name = "clSL";
+            this.clSL.ReadOnly = true;
+            // 
+            // clGiaNhap
+            // 
+            this.clGiaNhap.HeaderText = "Giá Nhập";
+            this.clGiaNhap.MinimumWidth = 6;
+            this.clGiaNhap.Name = "clGiaNhap";
+            this.clGiaNhap.ReadOnly = true;
+            // 
+            // clGiaBan
+            // 
+            this.clGiaBan.HeaderText = "Giá Bán";
+            this.clGiaBan.MinimumWidth = 6;
+            this.clGiaBan.Name = "clGiaBan";
+            this.clGiaBan.ReadOnly = true;
+            // 
+            // btnXuatExcelNhapKhau
+            // 
+            this.btnXuatExcelNhapKhau.Animated = true;
+            this.btnXuatExcelNhapKhau.BorderRadius = 10;
+            this.btnXuatExcelNhapKhau.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXuatExcelNhapKhau.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXuatExcelNhapKhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXuatExcelNhapKhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXuatExcelNhapKhau.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(252)))), ((int)(((byte)(213)))));
+            this.btnXuatExcelNhapKhau.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnXuatExcelNhapKhau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(121)))));
+            this.btnXuatExcelNhapKhau.Location = new System.Drawing.Point(925, 322);
+            this.btnXuatExcelNhapKhau.Name = "btnXuatExcelNhapKhau";
+            this.btnXuatExcelNhapKhau.Size = new System.Drawing.Size(111, 27);
+            this.btnXuatExcelNhapKhau.TabIndex = 84;
+            this.btnXuatExcelNhapKhau.Text = "Xuất excel";
+            this.btnXuatExcelNhapKhau.Click += new System.EventHandler(this.btnXuatExcelNhapKhau_Click);
+            // 
+            // btnNhapExcelNhapKhau
+            // 
+            this.btnNhapExcelNhapKhau.Animated = true;
+            this.btnNhapExcelNhapKhau.BorderRadius = 10;
+            this.btnNhapExcelNhapKhau.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnNhapExcelNhapKhau.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnNhapExcelNhapKhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNhapExcelNhapKhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnNhapExcelNhapKhau.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(252)))), ((int)(((byte)(213)))));
+            this.btnNhapExcelNhapKhau.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnNhapExcelNhapKhau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(121)))));
+            this.btnNhapExcelNhapKhau.Location = new System.Drawing.Point(797, 322);
+            this.btnNhapExcelNhapKhau.Name = "btnNhapExcelNhapKhau";
+            this.btnNhapExcelNhapKhau.Size = new System.Drawing.Size(122, 27);
+            this.btnNhapExcelNhapKhau.TabIndex = 83;
+            this.btnNhapExcelNhapKhau.Text = "Nhập excel";
+            this.btnNhapExcelNhapKhau.Click += new System.EventHandler(this.btnNhapExcelNhapKhau_Click);
             // 
             // btnXoaNhapKhau
             // 
@@ -631,48 +675,6 @@
             this.txtMaSPNhapKhau.Size = new System.Drawing.Size(307, 40);
             this.txtMaSPNhapKhau.TabIndex = 68;
             // 
-            // clMaSP
-            // 
-            this.clMaSP.HeaderText = "Mã Sản Phẩm\t";
-            this.clMaSP.MinimumWidth = 6;
-            this.clMaSP.Name = "clMaSP";
-            this.clMaSP.ReadOnly = true;
-            // 
-            // clTenSP
-            // 
-            this.clTenSP.HeaderText = "Tên Sản Phẩm";
-            this.clTenSP.MinimumWidth = 6;
-            this.clTenSP.Name = "clTenSP";
-            this.clTenSP.ReadOnly = true;
-            // 
-            // clNCC
-            // 
-            this.clNCC.HeaderText = "Nhà Cung Cấp";
-            this.clNCC.MinimumWidth = 6;
-            this.clNCC.Name = "clNCC";
-            this.clNCC.ReadOnly = true;
-            // 
-            // clSL
-            // 
-            this.clSL.HeaderText = "Số Lượng";
-            this.clSL.MinimumWidth = 6;
-            this.clSL.Name = "clSL";
-            this.clSL.ReadOnly = true;
-            // 
-            // clGiaNhap
-            // 
-            this.clGiaNhap.HeaderText = "Giá Nhập";
-            this.clGiaNhap.MinimumWidth = 6;
-            this.clGiaNhap.Name = "clGiaNhap";
-            this.clGiaNhap.ReadOnly = true;
-            // 
-            // clGiaBan
-            // 
-            this.clGiaBan.HeaderText = "Giá Bán";
-            this.clGiaBan.MinimumWidth = 6;
-            this.clGiaBan.Name = "clGiaBan";
-            this.clGiaBan.ReadOnly = true;
-            // 
             // nhapKhauUC
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -682,8 +684,8 @@
             this.Controls.Add(this.txtGiaBanNhapKhau);
             this.Controls.Add(this.guna2CustomGradientPanel2);
             this.Controls.Add(this.guna2CustomGradientPanel1);
-            this.Controls.Add(this.guna2Button5);
-            this.Controls.Add(this.guna2Button4);
+            this.Controls.Add(this.btnXuatExcelNhapKhau);
+            this.Controls.Add(this.btnNhapExcelNhapKhau);
             this.Controls.Add(this.btnXoaNhapKhau);
             this.Controls.Add(this.btnSuaNhapKhau);
             this.Controls.Add(this.btnThemNhapKhau);
@@ -728,8 +730,8 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2DataGridView dgvNhapKhau;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2Button btnXuatExcelNhapKhau;
+        private Guna.UI2.WinForms.Guna2Button btnNhapExcelNhapKhau;
         private Guna.UI2.WinForms.Guna2Button btnXoaNhapKhau;
         private Guna.UI2.WinForms.Guna2Button btnSuaNhapKhau;
         private Guna.UI2.WinForms.Guna2Button btnThemNhapKhau;
