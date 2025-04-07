@@ -15,7 +15,7 @@ namespace appSuper.Controller
             if (string.IsNullOrWhiteSpace(maSP))
             {
                 MessageBox.Show("Mã sản phẩm không được để trống!");
-                return false; 
+                return false;
             }
 
             return true; // Mã sản phẩm hợp lệ (không trống)
@@ -43,22 +43,23 @@ namespace appSuper.Controller
 
             return true; // Email hợp lệ
         }
-public bool CheckSdt(string sdt)
-{
-    if (string.IsNullOrWhiteSpace(sdt))
-    {
-        MessageBox.Show("Số điện thoại không được để trống!");
-        return false;
-    }
 
-    if (!Regex.IsMatch(sdt, @"^0[0-9]{9,10}$"))
-    {
-        MessageBox.Show("Số điện thoại không hợp lệ! Vui lòng nhập số bắt đầu bằng '0' và có 9-10 chữ số.");
-        return false;
-    }
+        public bool CheckSdt(string sdt)
+        {
+            if (string.IsNullOrWhiteSpace(sdt))
+            {
+                MessageBox.Show("Số điện thoại không được để trống!");
+                return false;
+            }
 
-    return true; // Số điện thoại hợp lệ
-}
+            if (!Regex.IsMatch(sdt, @"^0[0-9]{9,10}$"))
+            {
+                MessageBox.Show("Số điện thoại không hợp lệ! Vui lòng nhập số bắt đầu bằng '0' và có 9-10 chữ số.");
+                return false;
+            }
+
+            return true; // Số điện thoại hợp lệ
+        }
 
         public bool CheckGia(string gia)
         {
@@ -76,7 +77,5 @@ public bool CheckSdt(string sdt)
 
             return true; // Giá trị hợp lệ
         }
-
-
     }
 }

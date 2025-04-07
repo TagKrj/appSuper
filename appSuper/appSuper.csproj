@@ -87,6 +87,18 @@
     <Compile Include="Model\ThuCung.cs" />
     <Compile Include="Model\Thuoc.cs" />
     <Compile Include="Controller\ThuocController.cs" />
+    <Compile Include="View\billForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\billForm.Designer.cs">
+      <DependentUpon>billForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\xuatHangForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\xuatHangForm.Designer.cs">
+      <DependentUpon>xuatHangForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Widget\dienTuUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -203,6 +215,12 @@
     <Compile Include="Widget\thuocUserControl.Designer.cs">
       <DependentUpon>thuocUserControl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\billForm.resx">
+      <DependentUpon>billForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\xuatHangForm.resx">
+      <DependentUpon>xuatHangForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Widget\dienTuUserControl.resx">
       <DependentUpon>dienTuUserControl.cs</DependentUpon>
       <SubType>Designer</SubType>
