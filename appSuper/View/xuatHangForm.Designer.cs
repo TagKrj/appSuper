@@ -127,6 +127,7 @@
             this.guna2Button6.Size = new System.Drawing.Size(122, 27);
             this.guna2Button6.TabIndex = 109;
             this.guna2Button6.Text = "Xuất hàng";
+            this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
             // guna2Elipse2
             // 
@@ -259,6 +260,7 @@
             this.txtSearchThuoc.SelectedText = "";
             this.txtSearchThuoc.Size = new System.Drawing.Size(303, 40);
             this.txtSearchThuoc.TabIndex = 141;
+            this.txtSearchThuoc.TextChanged += new System.EventHandler(this.txtSearchThuoc_TextChanged);
             // 
             // guna2CustomGradientPanel2
             // 
@@ -362,6 +364,7 @@
             this.btnThemNV.Name = "btnThemNV";
             this.btnThemNV.Size = new System.Drawing.Size(86, 36);
             this.btnThemNV.TabIndex = 142;
+            this.btnThemNV.Click += new System.EventHandler(this.btnThemNV_Click);
             // 
             // guna2Button1
             // 
@@ -380,6 +383,7 @@
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(86, 36);
             this.guna2Button1.TabIndex = 143;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 

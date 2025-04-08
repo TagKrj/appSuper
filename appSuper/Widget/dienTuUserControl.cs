@@ -242,6 +242,41 @@ namespace appSuper
             var exporter = new DienTuController.ExcelExporter();
             exporter.ExportDataGridViewToExcel(dgvDienTu);
         }
+
+        private void btnXuatHang_Click(object sender, EventArgs e)
+        {
+            // Kiểm tra xem có hàng nào được chọn trong DataGridView không
+            if (dgvDienTu.SelectedRows.Count == 0 && dgvDienTu.SelectedCells.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn sản phẩm cần xuất kho!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Lấy thông tin sản phẩm từ hàng được chọn
+            var selectedRow = dgvDienTu.CurrentRow;
+            if (selectedRow != null)
+            {
+                // Tạo danh sách sản phẩm cần xuất
+                List<DienTu> sanPhamCanXuat = new List<DienTu>();
+                
+                DienTu dienTu = new DienTu
+                {
+                    maSP = selectedRow.Cells[0].Value?.ToString(),
+                    tenSP = selectedRow.Cells[1].Value?.ToString(),
+                    nhaCungCap = selectedRow.Cells[2].Value?.ToString(),
+                    soLuong = Convert.ToInt32(selectedRow.Cells[3].Value),
+                    giaNhap = Convert.ToDecimal(selectedRow.Cells[4].Value),
+                    giaBan = Convert.ToDecimal(selectedRow.Cells[5].Value)
+                };
+
+                sanPhamCanXuat.Add(dienTu);
+
+                // Mở form xuất hàng và truyền dữ liệu
+                View.xuatHangForm xuatHang = new View.xuatHangForm();
+                xuatHang.NhanSanPhamDienTu(sanPhamCanXuat);
+                xuatHang.ShowDialog();
+            }
+        }
     }
     
 }

@@ -68,7 +68,7 @@
             this.txtMaSPDienTu = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnNhapExcelDienTu = new Guna.UI2.WinForms.Guna2Button();
             this.btnXuatExcelDienTu = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnXuatHang = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel2.SuspendLayout();
             this.guna2CircleProgressBar1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
@@ -657,28 +657,29 @@
             this.btnXuatExcelDienTu.Text = "Xuất excel";
             this.btnXuatExcelDienTu.Click += new System.EventHandler(this.btnXuatExcelDienTu_Click);
             // 
-            // guna2Button6
+            // btnXuatHang
             // 
-            this.guna2Button6.Animated = true;
-            this.guna2Button6.BorderRadius = 10;
-            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(252)))), ((int)(((byte)(213)))));
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.guna2Button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(121)))));
-            this.guna2Button6.Location = new System.Drawing.Point(669, 322);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(122, 27);
-            this.guna2Button6.TabIndex = 45;
-            this.guna2Button6.Text = "Xuất hàng";
+            this.btnXuatHang.Animated = true;
+            this.btnXuatHang.BorderRadius = 10;
+            this.btnXuatHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXuatHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXuatHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXuatHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXuatHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(252)))), ((int)(((byte)(213)))));
+            this.btnXuatHang.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnXuatHang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(121)))));
+            this.btnXuatHang.Location = new System.Drawing.Point(669, 322);
+            this.btnXuatHang.Name = "btnXuatHang";
+            this.btnXuatHang.Size = new System.Drawing.Size(122, 27);
+            this.btnXuatHang.TabIndex = 45;
+            this.btnXuatHang.Text = "Xuất hàng";
+            this.btnXuatHang.Click += new System.EventHandler(this.btnXuatHang_Click);
             // 
             // dienTuUC
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.guna2Button6);
+            this.Controls.Add(this.btnXuatHang);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtGiaBanDienTu);
             this.Controls.Add(this.guna2CustomGradientPanel2);
@@ -745,7 +746,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txtMaSPDienTu;
         private Guna.UI2.WinForms.Guna2Button btnXuatExcelDienTu;
         private Guna.UI2.WinForms.Guna2Button btnNhapExcelDienTu;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
+        private Guna.UI2.WinForms.Guna2Button btnXuatHang;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

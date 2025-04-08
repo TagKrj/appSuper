@@ -163,6 +163,52 @@ namespace appSuper.Controller
             }
         }
 
+        // Phương thức giảm số lượng khi xuất hàng
+        public static bool GiamSoLuong(string maSP, int soLuongGiam)
+        {
+            using (SqlConnection conn = Database.GetConnection())
+            {
+                try
+                {
+                    // Kiểm tra xem số lượng hiện tại trong kho có đủ để xuất không
+                    string checkQuery = "SELECT soLuong FROM DienTu WHERE maSP = @maSP";
+                    int soLuongHienTai = 0;
+                    
+                    using (SqlCommand checkCmd = new SqlCommand(checkQuery, conn))
+                    {
+                        checkCmd.Parameters.AddWithValue("@maSP", maSP);
+                        var result = checkCmd.ExecuteScalar();
+                        if (result != null)
+                        {
+                            soLuongHienTai = (int)result;
+                        }
+                    }
+
+                    if (soLuongHienTai < soLuongGiam)
+                    {
+                        MessageBox.Show($"Số lượng sản phẩm trong kho không đủ. Hiện chỉ còn {soLuongHienTai} sản phẩm.", 
+                            "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return false;
+                    }
+
+                    // Cập nhật số lượng giảm
+                    string updateQuery = "UPDATE DienTu SET soLuong = soLuong - @soLuongGiam, updatedAt = GETDATE() WHERE maSP = @maSP";
+                    using (SqlCommand updateCmd = new SqlCommand(updateQuery, conn))
+                    {
+                        updateCmd.Parameters.AddWithValue("@maSP", maSP);
+                        updateCmd.Parameters.AddWithValue("@soLuongGiam", soLuongGiam);
+                        int rowsAffected = updateCmd.ExecuteNonQuery();
+                        return rowsAffected > 0;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi giảm số lượng sản phẩm: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+            }
+        }
+
         public class ExcelExporter
         {
             public void ExportDataGridViewToExcel(DataGridView dgv)

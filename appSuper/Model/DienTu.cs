@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace appSuper.Model
 {
-    class DienTu
+    public class DienTu
     {
         public int Id { get; set; }
         public String maSP { get; set; }
